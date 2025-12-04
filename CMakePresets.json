@@ -1,0 +1,50 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {}
+        },
+        {
+            "name": "Debug",
+            "inherits": "default",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "Release",
+            "inherits": "default",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "GCC 13.3.0 arm-none-eabi (ucrt64)",
+            "displayName": "GCC 13.3.0 arm-none-eabi (ucrt64)",
+            "description": "正在使用编译器: C = D:\\Application\\Work\\MSYS2\\ucrt64\\bin\\arm-none-eabi-gcc.exe, CXX = D:\\Application\\Work\\MSYS2\\ucrt64\\bin\\arm-none-eabi-g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc.exe",
+                "CMAKE_CXX_COMPILER": "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "configurePreset": "Debug"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "Release"
+        }
+    ]
+}

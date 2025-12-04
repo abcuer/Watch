@@ -1,0 +1,13 @@
+{
+    "clangd.path": "D:\\Application\\Work\\MSYS2\\ucrt64\\bin\\clangd.exe",
+    "clangd.fileTypes": ["cpp", "cc", "c++", "cxx", "c", "h", "hh", "hpp"],
+    "clangd.showDiagnosticsOnSave": true,
+    "clangd.useGlobalConfig": false,
+    "clangd.logLevel": "info",
+    "clangd.arguments": [
+        "--background-index",
+        "--compile-commands-dir=D:/MCU/1_STM32/Watch/build",
+        "--header-filter=.*"
+    ],
+    "clangd.debug": true
+}
