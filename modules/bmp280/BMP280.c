@@ -1,6 +1,7 @@
 #include "BMP280.h"
 #include "MYI2C.h"
 #include <stdint.h>
+#include <math.h>
 
 BMP280 bmp280_inst;
 BMP280* bmp280 = &bmp280_inst;		//���ȫ�ֽṹ����������������оƬ��ROM��������
@@ -70,7 +71,7 @@ void Bmp_Init(void)
 //BMP280_SLEEP_MODE||BMP280_FORCED_MODE||BMP280_NORMAL_MODE
 void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE * Oversample_Mode)
 {
-	u8 Regtmp;
+	uint8_t Regtmp;
 	Regtmp = ((Oversample_Mode->T_Osample)<<5)|
 			 ((Oversample_Mode->P_Osample)<<2)|
 			 ((Oversample_Mode)->WORKMODE);
@@ -82,7 +83,7 @@ void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE * Oversample_Mode)
 //���ñ���ʱ����˲�����Ƶ����
 void BMP280_Set_Standby_FILTER(BMP_CONFIG * BMP_Config)
 {
-	u8 Regtmp;
+	uint8_t Regtmp;
 	Regtmp = ((BMP_Config->T_SB)<<5)|
 			 ((BMP_Config->FILTER_COEFFICIENT)<<2)|
 			 ((BMP_Config->SPI_EN));
@@ -101,11 +102,7 @@ uint8_t  BMP280_GetStatus(uint8_t status_flag)
 	else return RESET;
 }
 
-
-
-
-
-static uint8_t BMP280_Read_Byte(u8 reg)
+static uint8_t BMP280_Read_Byte(uint8_t reg)
 {
 	uint8_t rec_data;
 	MyI2C_Start();
@@ -122,7 +119,7 @@ static uint8_t BMP280_Read_Byte(u8 reg)
 	return rec_data;
 }
 
- void BMP280_Write_Byte(u8 reg,u8 data)
+ void BMP280_Write_Byte(uint8_t reg,uint8_t data)
 {
 	MyI2C_Start();
 	MyI2C_SendByte(BMP280_ADDRESS<<1);
@@ -231,6 +228,15 @@ double BMP280_Get_Pressure(void)
 	Bit32 = ((long)(Msb << 12))|((long)(Lsb << 4))|(XLsb>>4);	//�Ĵ�����ֵ,���һ��������
 	pressure = bmp280_compensate_P_double(Bit32);
 	return pressure;
+}
+
+/* pressure: 当前气压，单位 Pa
+ * seaLevelPressure: 海平面参考气压，单位 Pa（常用 101325.0）
+ * 返回值：高度，单位 m
+ */
+double PressureToAltitude(double pressure)
+{
+  return 44330.0 * (1.0 - pow(pressure / 101325.0, 0.19029495718363465));
 }
 
 //�¶�ֵ-��

@@ -3,7 +3,6 @@
 
 #include "stm32f1xx_hal.h"
 #include "stdint.h"
-#include <stdint.h>
 
 #define BMP280_ADDRESS											 0x76		//���豸��ַ	
 #define BMP280_RESET_VALUE									 0xB6		//��λ�Ĵ���д��ֵ
@@ -154,9 +153,9 @@ void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE * Oversample_Mode);
 void BMP280_Set_Standby_FILTER(BMP_CONFIG * BMP_Config);
 uint8_t  BMP280_GetStatus(uint8_t status_flag);
 //����ѹֵ-Pa
-double BMP280_Get_Pressure(void);
 double BMP280_Get_Temperature(void);
-
+double BMP280_Get_Pressure(void);
+double PressureToAltitude(double pressure);
 
 /*******************************�������������㲹��ֵ���**********************************/
 typedef			long signed int				BMP280_S32_t;	//�з��� 64λ��

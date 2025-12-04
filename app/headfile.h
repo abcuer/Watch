@@ -16,7 +16,7 @@
 #include "screen.h"
 #include "sht31.h"
 #include "BMP280.h"
-
+#include "MAX30102.h"
 
 #include "test.h"
 
