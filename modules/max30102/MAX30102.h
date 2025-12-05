@@ -2,9 +2,6 @@
 #define __MAX30102_H
 
 #include "stdint.h"
-#include "software_IIC.h"
-#include "MAX30102_algorithm.h"
-#include "delay.h"
 
 #define MAX30102_ADDRESS		    0xAE		//MAX30102的I2C从机地址
 

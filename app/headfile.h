@@ -10,13 +10,15 @@
 #include "usart.h"
 #include "gpio.h"
 
-#include "delay.h"
-#include "iic_hal.h"
+#include "bsp_delay.h"
+#include "bsp_iic.h"
 
 #include "screen.h"
 #include "sht31.h"
 #include "BMP280.h"
 #include "MAX30102.h"
+#include "bh1750.h"
+#include "mpu6050.h"
 
 #include "test.h"
 

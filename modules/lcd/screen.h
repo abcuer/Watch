@@ -1,7 +1,6 @@
 #ifndef __screen_H
 #define __screen_H
 
-#include "gpio.h"
 #include "spi.h"
 #include "fonts.h"
 

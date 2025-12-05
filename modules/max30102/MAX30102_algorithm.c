@@ -1,7 +1,7 @@
-#include "MAX30102_algorithm.h"
-#include "MAX30102.h"
-#include "software_IIC.h"
-#include "Delay.h"
+#include "max30102_algorithm.h"
+#include "max30102.h"
+#include "math.h"
+
 #define XPI            	(3.1415926535897932384626433832795)
 #define XENTRY        	(100)
 #define XINCL        	(XPI/2/XENTRY)

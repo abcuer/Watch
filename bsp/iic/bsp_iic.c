@@ -1,6 +1,5 @@
-#include "iic_hal.h"
-#include "delay.h"
-#include "gpio.h"
+#include "bsp_iic.h"
+#include "bsp_delay.h"
 
 // SDA 输出
 static void SDA_OUT(iic_bus_t *bus)

@@ -1,8 +1,7 @@
 #ifndef __MYI2C_H
 #define __MYI2C_H
 
-#include "stm32f1xx_hal.h"
-#include "delay.h"
+#include "stdint.h"
 
 void MyI2C_Init(void);
 void MyI2C_Start(void);

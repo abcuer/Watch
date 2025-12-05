@@ -1,9 +1,8 @@
 #ifndef __SHT31_H
 #define __SHT31_H
 
-#include "stdint.h"
-#include "iic_hal.h" 
 #include "stm32f1xx_hal.h"
+#include "bsp_iic.h" 
 
 #define SHT31_ADDR (0x44 << 1)   // 7bit地址左移一位变为8bit地址
 

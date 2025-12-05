@@ -2,7 +2,6 @@
 #define __BLOOD_H
 
 #include "stdint.h"
-#include "math.h"
 
 #define FFT_N 			512     //定义傅里叶变换的点数
 #define START_INDEX 	4  //低频过滤阈值

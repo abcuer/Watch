@@ -1,5 +1,6 @@
 #include "MyI2C.h"
-
+#include "bsp_delay.h"
+#include "gpio.h"
 void MyI2C_W_SCL(uint8_t BitValue)
 {
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, BitValue);

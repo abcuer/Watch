@@ -1,4 +1,7 @@
-#include "MAX30102.h"
+#include "max30102.h"
+#include "software_IIC.h"
+#include "max30102_algorithm.h"
+#include "bsp_delay.h"
 
 uint16_t fifo_red;
 uint16_t fifo_ir;

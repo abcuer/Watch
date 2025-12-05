@@ -1,6 +1,6 @@
 #include "sht31.h"
-#include "iic_hal.h"
-#include "delay.h"
+#include "stdint.h"
+#include "bsp_delay.h"
 
 iic_bus_t sht31_bus = {
     .SDA_PORT = GPIOB,

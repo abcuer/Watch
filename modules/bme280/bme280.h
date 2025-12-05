@@ -2,9 +2,8 @@
 #define __BME280_H
 
 #include "stdint.h"
-#include "iic_hal.h"
-#include "delay.h"
-#include "gpio.h"
+#include "bsp_iic.h"
+
 
 #define BME280_ADDR 0x76   // 注意：软件 IIC 使用 7bit 地址，不需要左移
 

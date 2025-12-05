@@ -1,8 +1,7 @@
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx_hal_gpio.h"
 #include "software_IIC.h"
-#include "delay.h"
-#include "gpio.h"
+#include "bsp_delay.h"
 
 
 /*****************************IIC通信协议*****************************************/

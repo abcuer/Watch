@@ -1,5 +1,5 @@
-#ifndef __IIC_HAL_H
-#define __IIC_HAL_H
+#ifndef __BSP_IIC_H
+#define __BSP_IIC_H
 
 #include "stdint.h"
 #include "stm32f1xx_hal.h"
@@ -19,6 +19,7 @@ void IIC_Stop(iic_bus_t *bus);
 uint8_t IIC_WaitAck(iic_bus_t *bus);
 void IIC_SendAck(iic_bus_t *bus);
 void IIC_SendNoAck(iic_bus_t *bus);
+
 uint8_t IIC_WriteByte(iic_bus_t *bus, uint8_t data);
 uint8_t IIC_ReceiveByte(iic_bus_t *bus, uint8_t ack);
 uint8_t IIC_WriteReg(iic_bus_t *bus, uint8_t addr, uint8_t reg, uint8_t data);

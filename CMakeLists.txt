@@ -74,6 +74,9 @@ USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/sht31)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/bme280)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/bmp280)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/max30102)
+USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/bh1750)
+USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/mpu6050)
+USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/mpu6050/eMPL)
 # ---------------- 链接选项（newlib-nano + printf浮点支持） -----------------
 target_link_options(${CMAKE_PROJECT_NAME} PUBLIC
     -lc_nano
