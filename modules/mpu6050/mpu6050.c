@@ -94,7 +94,7 @@ u8 MPU_Set_Rate(u16 rate)
  	return MPU_Set_LPF(rate/2);	//自动设置LPF为采样率的一半
 }
 
-void mpu6050_Init(void)
+void MPU_Init(void)
 { 
 	u8 res; 
 	MPU6050_IIC_IO_Init(); //初始化IIC总线

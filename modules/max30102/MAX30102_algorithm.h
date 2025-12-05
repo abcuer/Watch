@@ -77,7 +77,7 @@ extern uint16_t SPO2dataResult;
 extern uint16_t HeartdataResult;
 void blood_data_translate(void);
 void blood_data_update(void);
-void blood_Loop(void);
+void blood_Loop(uint16_t SPO2dataResult, uint16_t HeartdataResult);
 
 #endif
 

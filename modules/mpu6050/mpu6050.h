@@ -39,7 +39,7 @@ u8   mpu6050_write(u8 addr, u8 reg, u8 len, u8* buf);//返回值 0：读成功  
 u8   mpu6050_read (u8 addr, u8 reg, u8 len, u8 *buf);//返回值 0：读成功  -1：读失败
 void mpu6050_write_reg(u8 reg, u8 dat);
 u8   mpu6050_read_reg (u8 reg);
-void mpu6050_Init(void);
+void MPU_Init(void);
 float MPU_Get_Temperature(void);
 u8 MPU_Get_Gyroscope(short *gx,short *gy,short *gz);
 u8 MPU_Get_Accelerometer(short *ax,short *ay,short *az);

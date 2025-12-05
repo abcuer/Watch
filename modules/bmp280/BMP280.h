@@ -3,9 +3,9 @@
 
 #include "stm32f1xx_hal.h"
 #include "stdint.h"
-
-#define BMP280_ADDRESS											 0x76		//���豸��ַ	
-#define BMP280_RESET_VALUE									 0xB6		//��λ�Ĵ���д��ֵ
+						/* ADD接低电平 0x76  ADD接高电平 0x77 */
+#define BMP280_ADDRESS						 0x76		
+#define BMP280_RESET_VALUE					 0xB6		
 
 #define BMP280_CHIPID_REG                    0xD0  /*Chip ID Register */
 #define BMP280_RESET_REG                     0xE0  /*Softreset Register */
@@ -48,31 +48,30 @@
 #define BMP280_DIG_P9_LSB_REG                0x9E
 #define BMP280_DIG_P9_MSB_REG                0x9F
 
+#define	dig_T1			bmp280->T1	
+#define	dig_T2			bmp280->T2	
+#define	dig_T3			bmp280->T3	
 
+#define	dig_P1			bmp280->P1
+#define	dig_P2			bmp280->P2
+#define	dig_P3			bmp280->P3
+#define	dig_P4			bmp280->P4
+#define	dig_P5			bmp280->P5
+#define	dig_P6			bmp280->P6
+#define	dig_P7			bmp280->P7
+#define	dig_P8			bmp280->P8
+#define	dig_P9			bmp280->P9
 
-void Bmp_Init(void);
+typedef			long signed int				BMP280_S32_t;	
+typedef			long unsigned int			BMP280_U32_t;	
+typedef			long long signed int		BMP280_S64_t;
 
-
-static uint8_t BMP280_Read_Byte(uint8_t reg);
-
-static void BMP280_Write_Byte(uint8_t reg, uint8_t data);
-
-uint8_t BMP280_ReadID(void);
-
-
-
-
-
-
-
-//�ṹ�����
 typedef enum {
 	BMP280_SLEEP_MODE = 0x0,
 	BMP280_FORCED_MODE = 0x1,	//����˵0x2
 	BMP280_NORMAL_MODE = 0x3
 } BMP280_WORK_MODE;
 
-//BMPѹ������������
 typedef enum 
 {
 	BMP280_P_MODE_SKIP = 0x0,	/*skipped*/
@@ -83,7 +82,6 @@ typedef enum
 	BMP280_P_MODE_5			    /*x16*/
 } BMP280_P_OVERSAMPLING;	
 
-//BMP�¶ȹ���������
 typedef enum {
 	BMP280_T_MODE_SKIP = 0x0,	/*skipped*/
 	BMP280_T_MODE_1,			/*x1*/
@@ -93,7 +91,6 @@ typedef enum {
 	BMP280_T_MODE_5			    /*x16*/
 } BMP280_T_OVERSAMPLING;
 									
-//IIR�˲���ʱ�䳣��
 typedef enum {
 	BMP280_FILTER_OFF = 0x0,	/*filter off*/
 	BMP280_FILTER_MODE_1,		/*0.223*ODR*/	/*x2*/
@@ -102,7 +99,6 @@ typedef enum {
 	BMP280_FILTER_MODE_4		/*0.021*ODR*/	/*x16*/
 } BMP280_FILTER_COEFFICIENT;
 
-//����ʱ��
 typedef enum {
 	BMP280_T_SB1 = 0x0,	    /*0.5ms*/
 	BMP280_T_SB2,			/*62.5ms*/
@@ -114,10 +110,8 @@ typedef enum {
 	BMP280_T_SB8,			/*4000ms*/
 } BMP280_T_SB;
 
-
 typedef struct  
 {
-	/* T1~P9 Ϊ����ϵ�� */
 	uint16_t T1;
 	int16_t	T2;
 	int16_t	T3;
@@ -147,35 +141,16 @@ typedef struct
 	FunctionalState				SPI_EN;
 } BMP_CONFIG;
 
-extern BMP280* bmp280;
-
 void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE * Oversample_Mode);
 void BMP280_Set_Standby_FILTER(BMP_CONFIG * BMP_Config);
 uint8_t  BMP280_GetStatus(uint8_t status_flag);
-//����ѹֵ-Pa
 double BMP280_Get_Temperature(void);
 double BMP280_Get_Pressure(void);
 double PressureToAltitude(double pressure);
 
-/*******************************�������������㲹��ֵ���**********************************/
-typedef			long signed int				BMP280_S32_t;	//�з��� 64λ��
-typedef			long unsigned int			BMP280_U32_t;	//�޷��� 32λ��
-typedef			long long signed int		BMP280_S64_t;
+void Bmp_Init(void);
+uint8_t BMP280_ReadID(void);
 
-#define	dig_T1			bmp280->T1	
-#define	dig_T2			bmp280->T2	
-#define	dig_T3			bmp280->T3	
-
-#define	dig_P1			bmp280->P1
-#define	dig_P2			bmp280->P2
-#define	dig_P3			bmp280->P3
-#define	dig_P4			bmp280->P4
-#define	dig_P5			bmp280->P5
-#define	dig_P6			bmp280->P6
-#define	dig_P7			bmp280->P7
-#define	dig_P8			bmp280->P8
-#define	dig_P9			bmp280->P9
-/************************************************CUT****************************************/
-
+extern BMP280* bmp280;
 
 #endif

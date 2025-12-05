@@ -1,14 +1,19 @@
 #include "sht31.h"
+#include "bsp_iic.h"
 #include "stdint.h"
 #include "bsp_delay.h"
 
 iic_bus_t sht31_bus = {
     .SDA_PORT = GPIOB,
-    .SDA_PIN  = GPIO_PIN_7,
+    .SDA_PIN  = GPIO_PIN_11,
     .SCL_PORT = GPIOB,
-    .SCL_PIN  = GPIO_PIN_6,
+    .SCL_PIN  = GPIO_PIN_10,
 };
 
+void SHTInit(iic_bus_t *bus)
+{
+    IIC_Init(bus);
+}
 
 static const uint8_t SHT31_CMD_MEASURE[2] = {0x24, 0x00};
 static uint8_t SHT31_CalcCRC(uint8_t *data)
@@ -34,16 +39,16 @@ HAL_StatusTypeDef SHT31_ReadTempHum(iic_bus_t *bus, float *temperature, float *h
 
     /* 发送测量命令 */
     IIC_Start(bus);
-    if (IIC_WriteByte(bus, SHT31_ADDR | 0) != 0) { IIC_Stop(bus); return HAL_ERROR; }
-    IIC_WriteByte(bus, SHT31_CMD_MEASURE[0]);
-    IIC_WriteByte(bus, SHT31_CMD_MEASURE[1]);
+    if (IIC_SendByte(bus, SHT31_ADDR | 0) != 0) { IIC_Stop(bus); return HAL_ERROR; }
+    IIC_SendByte(bus, SHT31_CMD_MEASURE[0]);
+    IIC_SendByte(bus, SHT31_CMD_MEASURE[1]);
     IIC_Stop(bus);
 
     delay_ms(20);     // 典型测量时间 15ms
 
     /* 读数据 */
     IIC_Start(bus);
-    if (IIC_WriteByte(bus, SHT31_ADDR | 1) != 0) {
+    if (IIC_SendByte(bus, SHT31_ADDR | 1) != 0) {
         IIC_Stop(bus);
         return HAL_ERROR;
     }

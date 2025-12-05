@@ -94,7 +94,7 @@ void IIC_SendAck(iic_bus_t *bus)
 }
 
 /**************** I2C 发送 NACK ****************/
-void IIC_SendNoAck(iic_bus_t *bus)
+void IIC_SendNotAck(iic_bus_t *bus)
 {
     HAL_GPIO_WritePin(bus->SCL_PORT, bus->SCL_PIN, GPIO_PIN_RESET);
 
@@ -108,7 +108,7 @@ void IIC_SendNoAck(iic_bus_t *bus)
     HAL_GPIO_WritePin(bus->SCL_PORT, bus->SCL_PIN, GPIO_PIN_RESET);
 }
 
-uint8_t IIC_WriteByte(iic_bus_t *bus, uint8_t data)
+uint8_t IIC_SendByte(iic_bus_t *bus, uint8_t data)
 {
     uint8_t ack;
 
@@ -129,6 +129,7 @@ uint8_t IIC_WriteByte(iic_bus_t *bus, uint8_t data)
     delay_us(5);
 
     HAL_GPIO_WritePin(bus->SCL_PORT, bus->SCL_PIN, GPIO_PIN_SET);
+    // ack = 0 表示从机应答成功
     ack = HAL_GPIO_ReadPin(bus->SDA_PORT, bus->SDA_PIN);
     delay_us(5);
 
@@ -160,65 +161,85 @@ uint8_t IIC_ReceiveByte(iic_bus_t *bus, uint8_t ack)
     if (ack)
         IIC_SendAck(bus);
     else
-        IIC_SendNoAck(bus);
+        IIC_SendNotAck(bus);
 
     return value;
 }
 
-uint8_t IIC_WriteReg(iic_bus_t *bus, uint8_t addr, uint8_t reg, uint8_t data)
+uint8_t IIC_Write_One_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg, uint8_t data)
 {
     IIC_Start(bus);
-    IIC_WriteByte(bus, addr);          // 器件写地址
+    IIC_SendByte(bus, dev_addr);   // 写地址
     IIC_WaitAck(bus);
 
-    IIC_WriteByte(bus, reg);           // 寄存器地址
+    IIC_SendByte(bus, reg);        // 寄存器地址
     IIC_WaitAck(bus);
 
-    IIC_WriteByte(bus, data);          // 数据
+    IIC_SendByte(bus, data);       // 数据
     IIC_WaitAck(bus);
 
     IIC_Stop(bus);
     return 1;
 }
 
-uint8_t IIC_ReadReg(iic_bus_t *bus, uint8_t addr, uint8_t reg)
+uint8_t IIC_Write_Multi_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg, uint8_t *buf, uint8_t len)
+{
+    IIC_Start(bus);
+    IIC_SendByte(bus, dev_addr);   // 写地址
+    IIC_WaitAck(bus);
+
+    IIC_SendByte(bus, reg);        // 起始寄存器
+    IIC_WaitAck(bus);
+
+    for (uint8_t i = 0; i < len; i++)
+    {
+        IIC_SendByte(bus, buf[i]); // 顺序写入
+        if (IIC_WaitAck(bus)) return 0; // NACK
+    }
+
+    IIC_Stop(bus);
+    return 1;
+}
+
+
+uint8_t IIC_Read_One_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg)
 {
     uint8_t data;
 
     IIC_Start(bus);
-    IIC_WriteByte(bus, addr);          // 器件写地址
+    IIC_SendByte(bus, dev_addr);   // 写地址
     IIC_WaitAck(bus);
 
-    IIC_WriteByte(bus, reg);           // 寄存器地址
+    IIC_SendByte(bus, reg);        // 寄存器地址
     IIC_WaitAck(bus);
 
     IIC_Start(bus);
-    IIC_WriteByte(bus, addr | 0x01);   // 器件读地址
+    IIC_SendByte(bus, dev_addr | 0x01);   // 读地址
     IIC_WaitAck(bus);
 
-    data = IIC_ReceiveByte(bus, 0);    // 最后一个字节 NACK
+    data = IIC_ReceiveByte(bus, 0);  // 最后一个字节 -> NACK
 
     IIC_Stop(bus);
     return data;
 }
 
-void IIC_ReadBytes(iic_bus_t *bus, uint8_t addr, uint8_t reg, uint8_t *buf, uint8_t len)
+void IIC_Read_Multi_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg, uint8_t *buf, uint8_t len)
 {
     IIC_Start(bus);
-    IIC_WriteByte(bus, addr);       // 写地址
+    IIC_SendByte(bus, dev_addr);    // 写地址
     IIC_WaitAck(bus);
 
-    IIC_WriteByte(bus, reg);        // 寄存器地址
+    IIC_SendByte(bus, reg);         // 寄存器地址
     IIC_WaitAck(bus);
 
     IIC_Start(bus);
-    IIC_WriteByte(bus, addr | 0x01);    // 读地址
+    IIC_SendByte(bus, dev_addr | 0x01);   // 读地址
     IIC_WaitAck(bus);
 
     for (uint8_t i = 0; i < len; i++)
     {
         buf[i] = IIC_ReceiveByte(bus, (i != len - 1));
-        // 最后一个字节发送 NACK
+        // 最后一个字节 NACK
     }
 
     IIC_Stop(bus);

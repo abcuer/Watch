@@ -354,10 +354,7 @@ void blood_data_translate(void)
 		g_blooddata.SpO2 = sp02_num;
 			
 }
-
-uint16_t SPO2dataResult;  //用于存储最终要显示在血氧检测功能的一级菜单中的数据
-uint16_t HeartdataResult; //用于存储最终要显示在心率检测功能的一级菜单中的数据
-void blood_Loop(void)
+void blood_Loop(uint16_t SPO2dataResult, uint16_t HeartdataResult)
 {
 	//血液信息获取
 	blood_data_update();
@@ -367,7 +364,6 @@ void blood_Loop(void)
 	g_blooddata.SpO2 = (g_blooddata.SpO2 > 99.99) ? 99.99:g_blooddata.SpO2;
 	SPO2dataResult = (uint16_t)g_blooddata.SpO2;	
 	HeartdataResult = (uint16_t)g_blooddata.heart;
-	
 }
 
 /*-----------------------------------------------------Blood.c-------------------------------------------------*/

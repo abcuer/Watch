@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "sht31.h"
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
@@ -62,13 +63,6 @@ int _write(int fd, char *ptr, int len)
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
 }
-// float temp, pre, alt;
-uint8_t ID;
-float lux;
-short ax, ay, az;
-short gx, gy, gz;
-float temp;
-
 /* USER CODE END 0 */
 
 /**
@@ -103,35 +97,16 @@ int main(void)
   MX_SPI1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  // IIC_Init(&sht31_bus);
-  // MAX30102_Init();
-  // BH1750_Init();
-  mpu6050_Init();
-  /*
-  Bmp_Init();
-	ID=BMP280_ReadID();          //获得ID号
-  */
-  // HAL_Delay(2000);
-  // Screen_Init();
+  SHTInit(&sht31_bus);
+
+  float temp, hum;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      MPU_Get_Accelerometer(&ax, &ay, &az);
-      MPU_Get_Gyroscope(&gx, &gy, &gz);
-      temp = MPU_Get_Temperature();
-      delay_ms(10);
-    // lux = BH1750_GetLux();
-    // delay_ms(200);
-    // blood_Loop();
-    /*
-    temp = BMP280_Get_Temperature();
-		pre = BMP280_Get_Pressure();
-    alt = PressureToAltitude(pre);
-    HAL_Delay(500);
-    */
+    SHT31_ReadTempHum(&sht31_bus, &temp, &hum);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

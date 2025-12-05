@@ -6,6 +6,36 @@
 BMP280 bmp280_inst;
 BMP280* bmp280 = &bmp280_inst;		//���ȫ�ֽṹ����������������оƬ��ROM��������
 
+static void BMP280_Write_Byte(uint8_t reg,uint8_t data)
+{
+	MyI2C_Start();
+	MyI2C_SendByte(BMP280_ADDRESS<<1);
+	MyI2C_ReceiveAck();
+	MyI2C_SendByte(reg);
+	MyI2C_ReceiveAck();
+	
+	MyI2C_SendByte(data);
+	MyI2C_ReceiveAck();
+	MyI2C_Stop();
+}
+
+static uint8_t BMP280_Read_Byte(uint8_t reg)
+{
+	uint8_t rec_data;
+	MyI2C_Start();
+	MyI2C_SendByte(BMP280_ADDRESS<<1|0);
+	MyI2C_ReceiveAck();
+	MyI2C_SendByte(reg);
+	MyI2C_ReceiveAck();
+	
+	MyI2C_Start();
+	MyI2C_SendByte(BMP280_ADDRESS<<1|1);
+	MyI2C_ReceiveAck();
+	rec_data = MyI2C_ReceiveByte();	//��Ӧ��
+	MyI2C_Stop();
+	return rec_data;
+}
+
 void Bmp_Init(void)
 {
 	MyI2C_Init();
@@ -79,8 +109,6 @@ void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE * Oversample_Mode)
 	BMP280_Write_Byte(BMP280_CTRLMEAS_REG,Regtmp);
 }
 
-
-//���ñ���ʱ����˲�����Ƶ����
 void BMP280_Set_Standby_FILTER(BMP_CONFIG * BMP_Config)
 {
 	uint8_t Regtmp;
@@ -91,10 +119,7 @@ void BMP280_Set_Standby_FILTER(BMP_CONFIG * BMP_Config)
 	BMP280_Write_Byte(BMP280_CONFIG_REG,Regtmp);
 }
 
-//��ȡBMP��ǰ״̬ ԭʼֵ
-//status_flag = BMP280_MEASURING ||
-//			 	BMP280_IM_UPDATE
-uint8_t  BMP280_GetStatus(uint8_t status_flag)
+uint8_t BMP280_GetStatus(uint8_t status_flag)
 {
 	uint8_t flag;
 	flag = BMP280_Read_Byte(BMP280_STATUS_REG);
@@ -102,45 +127,14 @@ uint8_t  BMP280_GetStatus(uint8_t status_flag)
 	else return RESET;
 }
 
-static uint8_t BMP280_Read_Byte(uint8_t reg)
-{
-	uint8_t rec_data;
-	MyI2C_Start();
-	MyI2C_SendByte(BMP280_ADDRESS<<1|0);
-	MyI2C_ReceiveAck();
-	MyI2C_SendByte(reg);
-	MyI2C_ReceiveAck();
-	
-	MyI2C_Start();
-	MyI2C_SendByte(BMP280_ADDRESS<<1|1);
-	MyI2C_ReceiveAck();
-	rec_data = MyI2C_ReceiveByte();	//��Ӧ��
-	MyI2C_Stop();
-	return rec_data;
-}
 
- void BMP280_Write_Byte(uint8_t reg,uint8_t data)
-{
-	MyI2C_Start();
-	MyI2C_SendByte(BMP280_ADDRESS<<1);
-	MyI2C_ReceiveAck();
-	MyI2C_SendByte(reg);
-	MyI2C_ReceiveAck();
-	
-	MyI2C_SendByte(data);
-	MyI2C_ReceiveAck();
-	MyI2C_Stop();
-}
 uint8_t BMP280_ReadID(void)
 {
 	return BMP280_Read_Byte(BMP280_CHIPID_REG);
 }
-/*******************��Ҫ����*********************/
-/****************��ȡ��������ȷֵ****************/
-//����ѹֵ-Pa
-/**************************������ֵת����ֵ*************************************/
-BMP280_S32_t t_fine;			//���ڼ��㲹��
-//���ø��㲹��
+
+BMP280_S32_t t_fine;			
+
 #ifdef USE_FIXED_POINT_COMPENSATE
 // Returns temperature in DegC, resolution is 0.01 DegC. Output value of ��5123�� equals 51.23 DegC. 
 // t_fine carries fine temperature as global value
@@ -181,9 +175,7 @@ BMP280_U32_t bmp280_compensate_P_int64(BMP280_S32_t adc_P)
 
 /***********************************CUT*************************************/
 #else
-/**************************������ֵת����ֵ*************************************/
-// Returns temperature in DegC, double precision. Output value of ��51.23�� equals 51.23 DegC.
-// t_fine carries fine temperature as global value
+
 double bmp280_compensate_T_double(BMP280_S32_t adc_T)
 {
 	double var1, var2, T;
@@ -195,7 +187,6 @@ double bmp280_compensate_T_double(BMP280_S32_t adc_T)
 	return T;
 }
 
-// Returns pressure in Pa as double. Output value of ��96386.2�� equals 96386.2 Pa = 963.862 hPa
 double bmp280_compensate_P_double(BMP280_S32_t adc_P)
 {
 	double var1, var2, p;
@@ -239,7 +230,6 @@ double PressureToAltitude(double pressure)
   return 44330.0 * (1.0 - pow(pressure / 101325.0, 0.19029495718363465));
 }
 
-//�¶�ֵ-��
 double BMP280_Get_Temperature(void)
 {
 	uint8_t XLsb,Lsb, Msb;
