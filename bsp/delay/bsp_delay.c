@@ -10,12 +10,20 @@
 //     while ((start - SysTick->VAL) < ticks);
 // }
 
-void delay_us(uint16_t us)
-{
-    for(uint16_t i=0;i<us*8;i++) __NOP();
-}
+// void delay_us(uint16_t us)
+// {
+//     for(uint16_t i=0;i<us*8;i++) __NOP();
+// }
 
-void delay_ms(uint16_t ms)
+void delay_us(uint32_t us)
 {
-    for(uint16_t i=0;i<ms;i++) delay_us(1000);
+	SysTick->LOAD = SYS_CLK * us;			//设置定时器重装值
+	SysTick->VAL = 0x00;					//清空当前计数值
+	SysTick->CTRL = 0x00000005;				//设置时钟源为HCLK，启动定时器
+	while(!(SysTick->CTRL & 0x00010000));	//等待计数到0
+	SysTick->CTRL = 0x00000004;				//关闭定时器
+}
+void delay_ms(uint32_t ms)
+{
+    for(uint32_t i=0;i<ms;i++) delay_us(1000);
 }

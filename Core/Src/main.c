@@ -18,8 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "bsp_delay.h"
 #include "sht31.h"
 #include "spi.h"
+#include "stm32f1xx_hal.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -63,6 +65,9 @@ int _write(int fd, char *ptr, int len)
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
 }
+float lux;
+
+
 /* USER CODE END 0 */
 
 /**
@@ -96,17 +101,18 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
+  
   /* USER CODE BEGIN 2 */
-  SHTInit(&sht31_bus);
+  BH1750_Init(&bh1750_bus);
 
-  float temp, hum;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    SHT31_ReadTempHum(&sht31_bus, &temp, &hum);
+    lux = BH1750_GetLux(&bh1750_bus);
+    delay_ms(300);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
