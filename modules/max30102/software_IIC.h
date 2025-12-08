@@ -1,12 +1,12 @@
 #ifndef __SOFTWARE_IIC_H
 #define __SOFTWARE_IIC_H
 
-#include "stdint.h"
+#include "stm32f1xx_hal.h"
 
 void I2C_GPIO_Init(void);
 void I2C_W_SCL(uint8_t BitValue);
 void I2C_W_SDA(uint8_t BitValue);
-uint8_t IIC_R_SDA(void);
+uint8_t I2C_R_SDA(void);
 void I2C_Start(void);
 void I2C_Stop(void);
 void I2C_SendByte(uint8_t Byte);

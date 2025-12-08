@@ -1,11 +1,11 @@
-#include "max30102_algorithm.h"
-#include "max30102.h"
-#include "math.h"
-
+#include "MAX30102_algorithm.h"
+#include "MAX30102.h"
+#include "software_IIC.h"
+#include "bsp_delay.h"
 #define XPI            	(3.1415926535897932384626433832795)
 #define XENTRY        	(100)
-#define XINCL        	(XPI/2/XENTRY)
-#define PI 				3.1415926535897932384626433832795028841971               //定义圆周率值
+#define XINCL        		(XPI/2/XENTRY)
+#define PI 							3.1415926535897932384626433832795028841971               //定义圆周率值
 
 /*Global data space ----------------------------------------------------------*/
 //正弦值对应表
@@ -354,7 +354,10 @@ void blood_data_translate(void)
 		g_blooddata.SpO2 = sp02_num;
 			
 }
-void blood_Loop(uint16_t SPO2dataResult, uint16_t HeartdataResult)
+
+uint16_t SPO2dataResult;  //用于存储最终要显示在血氧检测功能的一级菜单中的数据
+uint16_t HeartdataResult; //用于存储最终要显示在心率检测功能的一级菜单中的数据
+void blood_Loop(void)
 {
 	//血液信息获取
 	blood_data_update();
@@ -364,6 +367,7 @@ void blood_Loop(uint16_t SPO2dataResult, uint16_t HeartdataResult)
 	g_blooddata.SpO2 = (g_blooddata.SpO2 > 99.99) ? 99.99:g_blooddata.SpO2;
 	SPO2dataResult = (uint16_t)g_blooddata.SpO2;	
 	HeartdataResult = (uint16_t)g_blooddata.heart;
+	
 }
 
 /*-----------------------------------------------------Blood.c-------------------------------------------------*/

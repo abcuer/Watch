@@ -1,9 +1,10 @@
-#ifndef __BLOOD_H
-#define __BLOOD_H
+#ifndef _BLOOD_H
+#define _BLOOD_H
+#include "stm32f1xx_hal.h"                  // Device header
+#include "MAX30102.h"
+#include "math.h"
 
-#include "stdint.h"
-
-#define FFT_N 			512     //定义傅里叶变换的点数
+#define FFT_N 				512     //定义傅里叶变换的点数
 #define START_INDEX 	4  //低频过滤阈值
 
 struct compx      //定义一个复数结构
@@ -77,7 +78,7 @@ extern uint16_t SPO2dataResult;
 extern uint16_t HeartdataResult;
 void blood_data_translate(void);
 void blood_data_update(void);
-void blood_Loop(uint16_t SPO2dataResult, uint16_t HeartdataResult);
+void blood_Loop(void);
 
 #endif
 

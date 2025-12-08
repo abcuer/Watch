@@ -1,7 +1,9 @@
-#include "max30102.h"
+#include "stm32f1xx_hal.h"                  // Device header
 #include "software_IIC.h"
-#include "max30102_algorithm.h"
+#include "MAX30102.h"
+#include "MAX30102_algorithm.h"
 #include "bsp_delay.h"
+#define MAX_BRIGHTNESS 255
 
 uint16_t fifo_red;
 uint16_t fifo_ir;

@@ -15,8 +15,9 @@
 
 #include "screen.h"
 #include "sht31.h"
-#include "BMP280.h"
-#include "MAX30102.h"
+#include "bmp280.h"
+#include "max30102.h"
+#include "max30102_algorithm.h"
 #include "bh1750.h"
 #include "mpu6050.h"
 

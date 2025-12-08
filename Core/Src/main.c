@@ -18,10 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "bsp_delay.h"
-#include "sht31.h"
 #include "spi.h"
-#include "stm32f1xx_hal.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -65,7 +62,10 @@ int _write(int fd, char *ptr, int len)
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
 }
-float lux;
+uint16_t SPO2data;  //用于存储最终要显示在血氧检测功能的一级菜单中的数据
+uint16_t Heartdata; //用于存储最终要显示在心率检测功能的一级菜单中的数据
+
+
 
 
 /* USER CODE END 0 */
@@ -103,7 +103,7 @@ int main(void)
   MX_USART1_UART_Init();
   
   /* USER CODE BEGIN 2 */
-  BH1750_Init(&bh1750_bus);
+  MAX30102_Init();
 
   /* USER CODE END 2 */
 
@@ -111,8 +111,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    lux = BH1750_GetLux(&bh1750_bus);
-    delay_ms(300);
+    blood_Loop();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

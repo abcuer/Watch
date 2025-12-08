@@ -1,7 +1,6 @@
-#include "stm32f1xx_hal.h"
-#include "stm32f1xx_hal_gpio.h"
 #include "software_IIC.h"
 #include "bsp_delay.h"
+#include "stm32f1xx_hal_gpio.h"
 
 
 /*****************************IIC通信协议*****************************************/
@@ -9,34 +8,29 @@ void I2C_GPIO_Init(void)
 {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
 
-    /* 1. 上电延时 (阻塞延时，OS启动前使用 HAL_Delay 较安全) */
-    // 假设需要100毫秒等待OLED供电稳定
-    HAL_Delay(100); 
-
-    /* 2. 时钟使能 */
+    /* PB10 = SCL, PB11 = SDA */
     __HAL_RCC_GPIOB_CLK_ENABLE();
-    
-    /* 3. 配置SCL和SDA引脚 */
+
+    /* 设置为开漏输出 */
     GPIO_InitStruct.Pin = GPIO_PIN_10 | GPIO_PIN_11;
-    // 输出模式 (Output Mode)
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;       
-    // 开漏 (Open Drain)
-    GPIO_InitStruct.Pull = GPIO_PULLUP;               
-    // 上拉电阻 (推荐在开漏模式下使用)
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;   
-    // 速度 (F1系列通常设置为HIGH)
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;   // 开漏输出
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
 
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-    
-    /* 4. 释放SCL和SDA（确保它们被外部或内部上拉到高电平）*/
-	I2C_W_SCL(1);
-	I2C_W_SDA(1);
+
+    /* 释放总线 */
+    I2C_W_SCL(1);
+    I2C_W_SDA(1);
+
+    HAL_Delay(1); // 延时1ms，等待设备供电稳定
 }
 
 void I2C_W_SCL(uint8_t BitValue)
 {
 	/*根据BitValue的值，将SCL置高电平或者低电平*/
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, BitValue);
+	
 	/*如果单片机速度过快，可在此添加适量延时，以避免超出I2C通信的最大速度*/
 	//...
 }
@@ -44,7 +38,8 @@ void I2C_W_SCL(uint8_t BitValue)
 void I2C_W_SDA(uint8_t BitValue)
 {
 	/*根据BitValue的值，将SDA置高电平或者低电平*/
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, BitValue);
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, BitValue);
+	
 	/*如果单片机速度过快，可在此添加适量延时，以避免超出I2C通信的最大速度*/
 	//...
 }
@@ -119,7 +114,7 @@ uint8_t I2C_ReceiveAck(void)
 void I2C_WriteReg(uint8_t slave_ID,uint8_t RegAddress, uint8_t Data)
 {
 	I2C_Start();						//I2C起始
-	I2C_SendByte(slave_ID);		//发送从机地址，读写位为0，表示即将写入
+	I2C_SendByte(slave_ID);	//发送从机地址，读写位为0，表示即将写入
 	I2C_ReceiveAck();					//接收应答
 	I2C_SendByte(RegAddress);			//发送寄存器地址
 	I2C_ReceiveAck();					//接收应答
