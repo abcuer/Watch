@@ -18,13 +18,17 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "i2c.h"
+#include "screen.h"
 #include "spi.h"
+#include "stm32f1xx_hal_i2c.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "headfile.h"
+#include <stdint.h>
 
 /* USER CODE END Includes */
 
@@ -62,12 +66,9 @@ int _write(int fd, char *ptr, int len)
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
 }
-uint16_t SPO2data;  //用于存储最终要显示在血氧检测功能的一级菜单中的数据
-uint16_t Heartdata; //用于存储最终要显示在心率检测功能的一级菜单中的数据
-
-
-
-
+  uint8_t check;
+  uint8_t check_data[6];
+  uint16_t x, y;
 /* USER CODE END 0 */
 
 /**
@@ -76,7 +77,7 @@ uint16_t Heartdata; //用于存储最终要显示在心率检测功能的一级�
   */
 int main(void)
 {
-
+  
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -101,17 +102,23 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
-  
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  MAX30102_Init();
-
+  Screen_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    blood_Loop();
+    check = ChechkPush();
+    if(check != 0)
+    {
+      ReadPushDate(check_data);
+      x = check_data[1];
+      y = check_data[2]*255 + check_data[3];
+    }
+    check = 0;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -20,6 +20,7 @@
 #include "max30102_algorithm.h"
 #include "bh1750.h"
 #include "mpu6050.h"
+#include "cst816.h"
 
 #include "test.h"
 

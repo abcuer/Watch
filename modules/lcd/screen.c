@@ -137,7 +137,7 @@ void Screen_Init(void)
   	Screen_WriteCommand (Screen_DISPON);
 
 	HAL_Delay(50);
-	Screen_Fill_Color(BLACK);				//	Fill with Black.
+	Screen_Fill_Color(WHITE);				//	Fill with Black.
 }
 
 

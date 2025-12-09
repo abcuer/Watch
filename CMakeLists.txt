@@ -30,7 +30,6 @@ set(CMAKE_COLOR_DIAGNOSTICS ON)
 # 包含工具链文件（必须在 project() 前设置编译器）
 # include("cmake/gcc-arm-none-eabi.cmake")
 include("cmake/gcc-arm-none-eabi.cmake")
-
 # 核心项目设置
 project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})
@@ -70,13 +69,14 @@ USER_ADD_DIR(${CMAKE_SOURCE_DIR}/bsp)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/bsp/iic)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/bsp/delay)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/lcd)
+USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/touch)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/sht31)
-USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/bme280)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/bmp280)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/max30102)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/bh1750)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/mpu6050)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/modules/mpu6050/eMPL)
+
 # ---------------- 链接选项（newlib-nano + printf浮点支持） -----------------
 target_link_options(${CMAKE_PROJECT_NAME} PUBLIC
     -lc_nano
