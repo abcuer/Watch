@@ -1,5 +1,30 @@
 #include "test.h"
 
+/* 触摸屏使用示例
+  uint8_t check;
+  uint8_t check_data[4];
+  uint16_t x, y;
+
+Screen_Init();
+
+check = ChechkPush();
+if(check != 0)
+{
+    ReadPushDate(check_data);
+    uint8_t xh = (check_data[1] >> 4) & 0x0F;
+    uint8_t yh = (check_data[1]     ) & 0x0F;
+
+    uint8_t xl = check_data[2];
+    uint8_t yl = check_data[3];
+
+    x = (xh << 8) | xl;
+    y = (yh << 8) | yl;
+
+}
+check = 0;
+*/
+
+
 /*  MPU6050 使用示例
 short ax, ay, az;
 short gx, gy, gz;
@@ -32,26 +57,23 @@ delay_ms(500);
 */
 
 /*  BMP280 使用示例
-uint8_t ID;
-float temp, pre, alt;
+bmp280_t bmp;
 
 Bmp_Init();
-ID=BMP280_ReadID();          //获得ID号
-temp = BMP280_Get_Temperature();
-pre = BMP280_Get_Pressure();
-alt = PressureToAltitude(pre);
-delay_ms(500);
+
+bmp.id = BMP280_ReadID();
+bmp.temp = BMP280_Get_Temperature();
+bmp.pre = BMP280_Get_Pressure();
+bmp.alt = PressureToAltitude(bmp.pre, 101325.0);
+delay_ms(100);
 */
 
 /*  SHT31 使用示例
-float temp, hum;
+SHT31_t sht31;
+SHTInit();
 
-SHTInit(&sht31_bus);
-void test()
-{
-    SHT31_ReadTempHum(&sht31_bus, &temp, &hum)
-    delay_ms(100);
-}
+SHT31_ReadTempHum(&sht31.temp, &sht31.hum);
+delay_ms(100);
 */
 
 /*  屏幕  使用示例

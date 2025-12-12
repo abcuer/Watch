@@ -4,18 +4,14 @@
 #include "bsp_delay.h"
 
 iic_bus_t sht31_bus = {
-    .SDA_PORT = GPIOB,
-    .SDA_PIN  = GPIO_PIN_11,
-    .SCL_PORT = GPIOB,
-    .SCL_PIN  = GPIO_PIN_10,
+    .IIC_SDA_PORT = GPIOB,
+    .IIC_SDA_PIN = GPIO_PIN_11,
+    .IIC_SCL_PORT = GPIOB,
+    .IIC_SCL_PIN = GPIO_PIN_10
 };
 
-void SHTInit(iic_bus_t *bus)
-{
-    IIC_Init(bus);
-}
-
 static const uint8_t SHT31_CMD_MEASURE[2] = {0x24, 0x00};
+
 static uint8_t SHT31_CalcCRC(uint8_t *data)
 {
     uint8_t crc = 0xFF;
@@ -33,41 +29,55 @@ static uint8_t SHT31_CalcCRC(uint8_t *data)
     return crc;
 }
 
-HAL_StatusTypeDef SHT31_ReadTempHum(iic_bus_t *bus, float *temperature, float *humidity)
+HAL_StatusTypeDef SHT31_ReadTempHum(float *temperature, float *humidity)
 {
     uint8_t data[6];
 
-    /* 发送测量命令 */
-    IIC_Start(bus);
-    if (IIC_SendByte(bus, SHT31_ADDR | 0) != 0) { IIC_Stop(bus); return HAL_ERROR; }
-    IIC_SendByte(bus, SHT31_CMD_MEASURE[0]);
-    IIC_SendByte(bus, SHT31_CMD_MEASURE[1]);
-    IIC_Stop(bus);
+    IICStart(&sht31_bus);
+    IICSendByte(&sht31_bus, SHT31_ADDR << 1);
+    if (IICWaitAck(&sht31_bus) != SUCCESS) {
+        IICStop(&sht31_bus);
+        return HAL_ERROR;
+    }
+    IICSendByte(&sht31_bus, SHT31_CMD_MEASURE[0]);
+    IICWaitAck(&sht31_bus);
+    IICSendByte(&sht31_bus, SHT31_CMD_MEASURE[1]);
+    IICWaitAck(&sht31_bus);
+    IICStop(&sht31_bus);
 
     delay_ms(20);     // 典型测量时间 15ms
 
-    /* 读数据 */
-    IIC_Start(bus);
-    if (IIC_SendByte(bus, SHT31_ADDR | 1) != 0) {
-        IIC_Stop(bus);
+    IICStart(&sht31_bus);
+    IICSendByte(&sht31_bus, (SHT31_ADDR << 1) | 0x01);
+    if (IICWaitAck(&sht31_bus) != SUCCESS) {
+        IICStop(&sht31_bus);
         return HAL_ERROR;
     }
-
+    
     for (int i = 0; i < 6; i++)
-        data[i] = IIC_ReceiveByte(bus, (i < 5));
+    {
+        data[i] = IICReceiveByte(&sht31_bus);
+        if (i < 5)
+            IICSendAck(&sht31_bus);      // 前5个字节发ACK
+        else
+            IICSendNotAck(&sht31_bus);   // 最后一个字节发NACK
+    }
+    IICStop(&sht31_bus);
 
-    IIC_Stop(bus);
-
-    /* 校验 CRC */
     if (SHT31_CalcCRC(&data[0]) != data[2]) return HAL_ERROR;
     if (SHT31_CalcCRC(&data[3]) != data[5]) return HAL_ERROR;
 
-    /* 解析温湿度 */
     uint16_t rawT = (data[0] << 8) | data[1];
     uint16_t rawH = (data[3] << 8) | data[4];
 
+    // 温度计算公式: -45 + 175 * (rawT / 65535)
     *temperature = -45.0f + 175.0f * ((float)rawT / 65535.0f);
-    *humidity    = 100.0f * ((float)rawH / 65535.0f);
+    // 湿度计算公式: 100 * (rawH / 65535)
+    *humidity = 100.0f * ((float)rawH / 65535.0f);
 
     return HAL_OK;
+}
+void SHTInit(void)
+{
+    IICInit(&sht31_bus);
 }

@@ -2,6 +2,7 @@
 #define __BMP280_H
 
 #include "stm32f1xx_hal.h"
+#include "bsp_delay.h"
 #include "stdint.h"
 						/* ADD接低电平 0x76  ADD接高电平 0x77 */
 #define BMP280_ADDRESS						 0x76		
@@ -126,7 +127,6 @@ typedef struct
 	int16_t	P9;
 } BMP280;
 
-
 typedef struct
 {
 	BMP280_P_OVERSAMPLING P_Osample;
@@ -141,16 +141,28 @@ typedef struct
 	FunctionalState				SPI_EN;
 } BMP_CONFIG;
 
-void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE * Oversample_Mode);
-void BMP280_Set_Standby_FILTER(BMP_CONFIG * BMP_Config);
-uint8_t  BMP280_GetStatus(uint8_t status_flag);
-double BMP280_Get_Temperature(void);
-double BMP280_Get_Pressure(void);
-double PressureToAltitude(double pressure);
+typedef struct
+{
+	uint8_t id;
+	float temp;
+	float pre;
+	float alt;
+}bmp280_t;
 
 void Bmp_Init(void);
+void Bmp_Quick_Init(void);
 uint8_t BMP280_ReadID(void);
 
-extern BMP280* bmp280;
+void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE *Oversample_Mode);
+void BMP280_Set_Standby_FILTER(BMP_CONFIG *BMP_Config);
+uint8_t BMP280_GetStatus(uint8_t status_flag);
 
+BMP280_S32_t BMP280_Get_Temperature_ADC(void);
+BMP280_S32_t BMP280_Get_Pressure_ADC(void);
+double bmp280_compensate_T_double(BMP280_S32_t adc_T);
+double bmp280_compensate_P_double(BMP280_S32_t adc_P);
+double BMP280_Get_Pressure(void);
+double PressureToAltitude(double pressure, double seaLevelPressure);
+double PressureToAltitudeStd(double pressure);
+double BMP280_Get_Temperature(void);
 #endif

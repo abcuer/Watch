@@ -18,8 +18,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "BMP280.h"
+#include "bh1750.h"
+#include "bsp_delay.h"
 #include "i2c.h"
 #include "screen.h"
+#include "sht31.h"
 #include "spi.h"
 #include "stm32f1xx_hal_i2c.h"
 #include "usart.h"
@@ -66,9 +70,7 @@ int _write(int fd, char *ptr, int len)
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
 }
-  uint8_t check;
-  uint8_t check_data[6];
-  uint16_t x, y;
+BH1750_t bh1750;
 /* USER CODE END 0 */
 
 /**
@@ -104,21 +106,15 @@ int main(void)
   MX_USART1_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  Screen_Init();
+  BH1750_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    check = ChechkPush();
-    if(check != 0)
-    {
-      ReadPushDate(check_data);
-      x = check_data[1];
-      y = check_data[2]*255 + check_data[3];
-    }
-    check = 0;
+    bh1750.lux = BH1750_GetLux();
+    delay_ms(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

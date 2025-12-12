@@ -1,32 +1,28 @@
 #ifndef __BSP_IIC_H
 #define __BSP_IIC_H
 
-#include "stdint.h"
 #include "stm32f1xx_hal.h"
 
-// 软件 I2C 总线结构体
-typedef struct {
-    GPIO_TypeDef* SDA_PORT;
-    uint16_t      SDA_PIN;
+typedef struct
+{
+	GPIO_TypeDef * IIC_SDA_PORT;
+	GPIO_TypeDef * IIC_SCL_PORT;
+	uint16_t IIC_SDA_PIN;
+	uint16_t IIC_SCL_PIN;
+	//void (*CLK_ENABLE)(void);
+}iic_bus_t;
 
-    GPIO_TypeDef* SCL_PORT;
-    uint16_t      SCL_PIN;
-} iic_bus_t;
+void IICStart(iic_bus_t *bus);
+void IICStop(iic_bus_t *bus);
+unsigned char IICWaitAck(iic_bus_t *bus);
+void IICSendAck(iic_bus_t *bus);
+void IICSendNotAck(iic_bus_t *bus);
+void IICSendByte(iic_bus_t *bus, unsigned char cSendByte);
+unsigned char IICReceiveByte(iic_bus_t *bus);
+void IICInit(iic_bus_t *bus);
 
-void IIC_Init(iic_bus_t *bus);
-void IIC_Start(iic_bus_t *bus);
-void IIC_Stop(iic_bus_t *bus);
-uint8_t IIC_WaitAck(iic_bus_t *bus);
-void IIC_SendAck(iic_bus_t *bus);
-void IIC_SendNotAck(iic_bus_t *bus);
-
-uint8_t IIC_SendByte(iic_bus_t *bus, uint8_t data);
-uint8_t IIC_ReceiveByte(iic_bus_t *bus, uint8_t ack);
-
-uint8_t IIC_Write_One_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg, uint8_t data);
-uint8_t IIC_Write_Multi_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg, uint8_t *buf, uint8_t len);
-uint8_t IIC_Read_One_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg);
-void IIC_Read_Multi_Byte(iic_bus_t *bus, uint8_t dev_addr, uint8_t reg, uint8_t *buf, uint8_t len);
-
-
+uint8_t IIC_Write_One_Byte(iic_bus_t *bus, uint8_t daddr,uint8_t reg,uint8_t data);
+uint8_t IIC_Write_Multi_Byte(iic_bus_t *bus, uint8_t daddr,uint8_t reg,uint8_t length,uint8_t buff[]);
+unsigned char IIC_Read_One_Byte(iic_bus_t *bus, uint8_t daddr,uint8_t reg);
+uint8_t IIC_Read_Multi_Byte(iic_bus_t *bus, uint8_t daddr, uint8_t reg, uint8_t length, uint8_t buff[]);
 #endif

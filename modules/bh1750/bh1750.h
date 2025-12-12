@@ -17,13 +17,14 @@
 #define BH1750_MODE_H2      0x11
 #define BH1750_MODE_L       0x13
 
-/* 全局总线实例（由 .c 文件定义）*/
-extern iic_bus_t bh1750_bus;
+void BH1750_Init(void);
+void BH1750_SendCmd(uint8_t cmd);
+uint16_t BH1750_ReadRaw(void);
+float BH1750_GetLux(void);
 
-/* 接口函数 */
-void BH1750_Init(iic_bus_t *bus);
-void BH1750_SendCmd(iic_bus_t *bus, uint8_t cmd);
-uint16_t BH1750_ReadRaw(iic_bus_t *bus);
-float BH1750_GetLux(iic_bus_t *bus);
+typedef struct
+{
+    float lux;
+}BH1750_t;
 
 #endif
