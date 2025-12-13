@@ -1,7 +1,7 @@
 #ifndef _BLOOD_H
 #define _BLOOD_H
 #include "stm32f1xx_hal.h"                  // Device header
-#include "MAX30102.h"
+#include "max30102.h"
 #include "math.h"
 
 #define FFT_N 				512     //定义傅里叶变换的点数
@@ -65,20 +65,19 @@ typedef enum
 {
 	BLD_NORMAL,		//正常
 	BLD_ERROR,		//侦测错误
-	
 }BloodState;//血液状态
 
 typedef struct
 {
-	int 		heart;		//心率数据
-	float 			SpO2;			//血氧数据
-}BloodData;
+	int heart;		//心率数据
+	float SpO2;		//血氧数据
+}BloodData_t;
 
-extern uint16_t SPO2dataResult; 
-extern uint16_t HeartdataResult;
-void blood_data_translate(void);
-void blood_data_update(void);
-void blood_Loop(void);
+void BloodDataTranslate(void);
+void BloodDataUpdate(void);
+void BloodGetData(void);
+
+extern BloodData_t b_data;
 
 #endif
 

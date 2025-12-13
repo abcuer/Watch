@@ -14,8 +14,10 @@
 #include "bsp_iic.h"
 
 #include "bmp280.h"
-#include "max30102.h"
-#include "max30102_algorithm.h"
+#include "blood.h"
+#include "sht31.h"
+#include "bh1750.h"
+#include "mpu6050.h"
 
 #include "test.h"
 

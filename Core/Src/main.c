@@ -70,7 +70,7 @@ int _write(int fd, char *ptr, int len)
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
 }
-BH1750_t bh1750;
+MPU_t mpu;
 /* USER CODE END 0 */
 
 /**
@@ -106,15 +106,15 @@ int main(void)
   MX_USART1_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  BH1750_Init();
+  MPU_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    bh1750.lux = BH1750_GetLux();
-    delay_ms(100);
+    MPU_Get_Angle(&mpu);
+    delay_ms(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

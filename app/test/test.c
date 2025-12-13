@@ -40,9 +40,7 @@ delay_ms(10);
 
 /*  BH1750 使用示例
 float lux;
-
 BH1750_Init();
-
 lux = BH1750_GetLux();
 delay_ms(500);
 */
@@ -52,8 +50,8 @@ uint16_t SPO2data;  //用于存储最终要显示在血氧检测功能的一级�
 uint16_t Heartdata; //用于存储最终要显示在心率检测功能的一级菜单中的数据
 
 MAX30102_Init();
-blood_Loop(SPO2data, Heartdata);
-delay_ms(500);
+    BloodGetData();
+    delay_ms(10);
 */
 
 /*  BMP280 使用示例

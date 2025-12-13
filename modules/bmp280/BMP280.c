@@ -14,7 +14,6 @@ iic_bus_t bmp280_bus = {
 BMP280 bmp280_inst;
 BMP280* bmp280 = &bmp280_inst;
 
-// 适配函数：确保地址格式正确
 static void BMP280_Write_Byte(uint8_t reg, uint8_t data)
 {
     // 注意：bsp_iic库函数内部可能已经处理了地址左移
@@ -27,23 +26,10 @@ static uint8_t BMP280_Read_Byte(uint8_t reg)
     return IIC_Read_One_Byte(&bmp280_bus, BMP280_ADDRESS, reg);
 }
 
-// 添加：读取多个连续字节函数（用于调试）
-static void BMP280_Read_Multi_Byte(uint8_t reg, uint8_t *data, uint8_t len)
-{
-    IIC_Read_Multi_Byte(&bmp280_bus, BMP280_ADDRESS, reg, len, data);
-}
-
 void Bmp_Init(void)
 {
-    // 初始化I2C总线
     IICInit(&bmp280_bus);
-    
-    // 等待传感器上电稳定
-    volatile int i;
-    for(i = 0; i < 10000; i++); // 简短延时
-    
     uint8_t Lsb, Msb;
-    
     /********************读取校准参数*********************/
     // 温度传感器的校准值
     Lsb = BMP280_Read_Byte(BMP280_DIG_T1_LSB_REG);
@@ -95,13 +81,9 @@ void Bmp_Init(void)
     Msb = BMP280_Read_Byte(BMP280_DIG_P9_MSB_REG);
     bmp280->P9 = (((int16_t)Msb) << 8) + Lsb;
     
-    // 软复位
     BMP280_Write_Byte(BMP280_RESET_REG, BMP280_RESET_VALUE);
-    
-    // 短暂延时等待复位完成
-    for(i = 0; i < 5000; i++);
-    
-    // 配置采样模式和滤波器（与原代码完全一致）
+    delay_ms(5);
+
     BMP_OVERSAMPLE_MODE BMP_OVERSAMPLE_MODEStructure;
     BMP_OVERSAMPLE_MODEStructure.P_Osample = BMP280_P_MODE_3;
     BMP_OVERSAMPLE_MODEStructure.T_Osample = BMP280_T_MODE_1;
@@ -114,12 +96,9 @@ void Bmp_Init(void)
     BMP_CONFIGStructure.SPI_EN = DISABLE;
     
     BMP280_Set_Standby_FILTER(&BMP_CONFIGStructure);
-    
-    // 等待传感器稳定
     delay_ms(10);
 }
 
-// 以下函数保持原样
 void BMP280_Set_TemOversamp(BMP_OVERSAMPLE_MODE *Oversample_Mode)
 {
     uint8_t Regtmp;
@@ -155,26 +134,6 @@ uint8_t BMP280_ReadID(void)
 
 BMP280_S32_t t_fine;
 
-// 添加：获取原始ADC值的函数（用于调试）
-BMP280_S32_t BMP280_Get_Temperature_ADC(void)
-{
-    uint8_t XLsb, Lsb, Msb;
-    XLsb = BMP280_Read_Byte(BMP280_TEMPERATURE_XLSB_REG);
-    Lsb  = BMP280_Read_Byte(BMP280_TEMPERATURE_LSB_REG);
-    Msb  = BMP280_Read_Byte(BMP280_TEMPERATURE_MSB_REG);
-    return ((long)(Msb << 12)) | ((long)(Lsb << 4)) | (XLsb >> 4);
-}
-
-BMP280_S32_t BMP280_Get_Pressure_ADC(void)
-{
-    uint8_t XLsb, Lsb, Msb;
-    XLsb = BMP280_Read_Byte(BMP280_PRESSURE_XLSB_REG);
-    Lsb  = BMP280_Read_Byte(BMP280_PRESSURE_LSB_REG);
-    Msb  = BMP280_Read_Byte(BMP280_PRESSURE_MSB_REG);
-    return ((long)(Msb << 12)) | ((long)(Lsb << 4)) | (XLsb >> 4);
-}
-
-// 原始补偿算法（保持完全一致）
 double bmp280_compensate_T_double(BMP280_S32_t adc_T)
 {
     double var1, var2, T;
@@ -229,13 +188,9 @@ double BMP280_Get_Temperature(void)
     return bmp280_compensate_T_double(adc_T);
 }
 
-// 添加：快速初始化函数（简化版，用于测试）
 void Bmp_Quick_Init(void)
 {
     IICInit(&bmp280_bus);
-    
-    // 简单配置：立即进入正常模式
     BMP280_Write_Byte(BMP280_CTRLMEAS_REG, 0x27); // 温度x1，气压x1，正常模式
-    
     delay_ms(10);
 }

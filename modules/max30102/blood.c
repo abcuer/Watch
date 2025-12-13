@@ -1,7 +1,6 @@
-#include "MAX30102_algorithm.h"
-#include "MAX30102.h"
-#include "software_IIC.h"
-#include "bsp_delay.h"
+#include "blood.h"
+#include "max30102.h"
+
 #define XPI            	(3.1415926535897932384626433832795)
 #define XENTRY        	(100)
 #define XINCL        		(XPI/2/XENTRY)
@@ -251,14 +250,14 @@ struct
 	
 }g_BloodWave;//血液波形数据
 
-BloodData g_blooddata = {0};					//血液数据存储
+BloodData_t b_data = {0};					//血液数据存储
 
-#define CORRECTED_VALUE			47   			//标定血液氧气含量
+#define CORRECTED_VALUE	47   			//标定血液氧气含量
 
 /*funcation start ------------------------------------------------------------*/
 //血液检测信息更新
 
-void blood_data_update(void)
+void BloodDataUpdate(void)
 {
 
 	//标志位被使能时 读取FIFO
@@ -281,7 +280,7 @@ void blood_data_update(void)
 }
 
 //血液信息转换
-void blood_data_translate(void)
+void BloodDataTranslate(void)
 {	
 	float n_denom;
 	uint16_t i;
@@ -347,27 +346,33 @@ void blood_data_translate(void)
 	int s2_max_index = find_max_num_index(s2, 30);
 	float Heart_Rate = 60.00 * ((100.0 * s1_max_index )/ 512.00)+20;
 	
-	g_blooddata.heart = Heart_Rate;
+	b_data.heart = Heart_Rate;
 	
-		float R = (ac_ir*dc_red)/(ac_red*dc_ir);
-		float sp02_num =-45.060*R*R+ 30.354 *R + 94.845;
-		g_blooddata.SpO2 = sp02_num;
-			
+	float R = (ac_ir*dc_red)/(ac_red*dc_ir);
+	float sp02_num =-45.060*R*R+ 30.354 *R + 94.845;
+	b_data.SpO2 = sp02_num;	
 }
 
-uint16_t SPO2dataResult;  //用于存储最终要显示在血氧检测功能的一级菜单中的数据
-uint16_t HeartdataResult; //用于存储最终要显示在心率检测功能的一级菜单中的数据
-void blood_Loop(void)
+static uint8_t FingerDetect(void)
 {
-	//血液信息获取
-	blood_data_update();
-	//血液信息转换
-	blood_data_translate();
-	//显示血液状态信息
-	g_blooddata.SpO2 = (g_blooddata.SpO2 > 99.99) ? 99.99:g_blooddata.SpO2;
-	SPO2dataResult = (uint16_t)g_blooddata.SpO2;	
-	HeartdataResult = (uint16_t)g_blooddata.heart;
-	
+	MAX30102_IIC_ReadReg(MAX30102_ADDRESS, REG_FIFO_DATA);
+    return (fifo_ir > 1100 && fifo_ir < 50000) ? 1 : 0;
+}
+
+void BloodGetData(void)
+{
+	if(FingerDetect())
+    {
+		BloodDataUpdate();
+        BloodDataTranslate();
+		b_data.SpO2 = (b_data.SpO2 > 99.99) ? 99.99:b_data.SpO2;
+        b_data.heart = (uint16_t)b_data.heart;
+    } 
+	else
+    {
+        b_data.heart = 0;
+        b_data.SpO2 = 0;
+    }
 }
 
 /*-----------------------------------------------------Blood.c-------------------------------------------------*/

@@ -3,7 +3,7 @@
 
 #include "stdint.h"
 
-#define MAX30102_ADDRESS		    0xAE		//MAX30102的I2C从机地址
+#define MAX30102_ADDRESS    0x57		//MAX30102的I2C从机地址
 
 #define REG_INTR_STATUS_1 0x00
 #define REG_INTR_STATUS_2 0x01
