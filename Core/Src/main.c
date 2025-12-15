@@ -18,14 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "BMP280.h"
-#include "bh1750.h"
 #include "bsp_delay.h"
-#include "i2c.h"
 #include "screen.h"
-#include "sht31.h"
 #include "spi.h"
-#include "stm32f1xx_hal_i2c.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -70,7 +65,8 @@ int _write(int fd, char *ptr, int len)
     HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
     return len;
 }
-MPU_t mpu;
+extern CST816_Info CST816_Instance;
+
 /* USER CODE END 0 */
 
 /**
@@ -79,7 +75,7 @@ MPU_t mpu;
   */
 int main(void)
 {
-  
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -104,17 +100,18 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_USART1_UART_Init();
-  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  MPU_Init();
+  Screen_Init();
+  CST816_Init();
+  delay_ms(10);
+  CST816_Instance.chip_id = CST816_Get_ChipID();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    MPU_Get_Angle(&mpu);
-    delay_ms(10);
+    CST816_Test();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

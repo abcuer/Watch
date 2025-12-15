@@ -5,11 +5,11 @@
 #include "bsp_iic.h"
 #include "stdio.h"
 #include "screen.h"
-#include "sht31.h"
-#include "bmp280.h"
+#include "cst816.h"
 
 
-void test();
+
+void cst816_test();
 
 
 

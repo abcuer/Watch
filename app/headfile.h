@@ -13,6 +13,8 @@
 #include "bsp_delay.h"
 #include "bsp_iic.h"
 
+#include "screen.h"
+#include "cst816.h"
 #include "bmp280.h"
 #include "blood.h"
 #include "sht31.h"

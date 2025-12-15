@@ -1,4 +1,5 @@
 #include "screen.h"
+#include "bsp_delay.h"
 
 uint16_t DMA_MIN_SIZE = 16;
 
@@ -85,11 +86,10 @@ static void Screen_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint1
 void Screen_Init(void)
 {
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
-	HAL_Delay(10);
     Screen_RST_Clr();
-    HAL_Delay(10);
+    delay_ms(5);
     Screen_RST_Set();
-    HAL_Delay(20);
+    delay_ms(15);
 
     Screen_WriteCommand(Screen_COLMOD);		//	Set color mode
     Screen_WriteSmallData(Screen_COLOR_MODE_16bit);
@@ -136,7 +136,7 @@ void Screen_Init(void)
   	Screen_WriteCommand (Screen_NORON);	
   	Screen_WriteCommand (Screen_DISPON);
 
-	HAL_Delay(50);
+	delay_ms(20);
 	Screen_Fill_Color(WHITE);				//	Fill with Black.
 }
 
@@ -236,8 +236,6 @@ void Screen_DrawImage(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint
 	Screen_WriteData((uint8_t *)data, sizeof(uint16_t) * w * h);
 	Screen_UnSelect();
 }
-
-
 
 void Screen_Test(void)
 {

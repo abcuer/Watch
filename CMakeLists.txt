@@ -30,6 +30,7 @@ set(CMAKE_COLOR_DIAGNOSTICS ON)
 # 包含工具链文件（必须在 project() 前设置编译器）
 # include("cmake/gcc-arm-none-eabi.cmake")
 include("cmake/gcc-arm-none-eabi.cmake")
+
 # 核心项目设置
 project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})

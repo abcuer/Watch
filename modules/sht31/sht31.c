@@ -45,7 +45,7 @@ HAL_StatusTypeDef SHT31_ReadTempHum(float *temperature, float *humidity)
     IICWaitAck(&sht31_bus);
     IICStop(&sht31_bus);
 
-    delay_ms(20);     // 典型测量时间 15ms
+    delay_ms(15);     // 典型测量时间 15ms
 
     IICStart(&sht31_bus);
     IICSendByte(&sht31_bus, (SHT31_ADDR << 1) | 0x01);
