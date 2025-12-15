@@ -1,7 +1,10 @@
 #ifndef __CST816_H
 #define __CST816_H
 
+#include "math.h"
 #include "stdint.h"
+#include "stdlib.h"
+#include "screen.h"
 #include "bsp_iic.h"
 #include "bsp_delay.h"
 
@@ -109,5 +112,7 @@ void CST816_Wakeup(void);
 void CST816_Sleep(void);
 
 void CST816_Test();
+void SetLineThickness(uint8_t thickness);
+void Touch_DrawLine(void);
 
 #endif

@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "bsp_delay.h"
+#include "csT816.h"
 #include "screen.h"
 #include "spi.h"
 #include "usart.h"
@@ -103,21 +104,22 @@ int main(void)
   /* USER CODE BEGIN 2 */
   Screen_Init();
   CST816_Init();
-  delay_ms(10);
-  CST816_Instance.chip_id = CST816_Get_ChipID();
+  delay_ms(20);
+  SetLineThickness(5);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    CST816_Test();
+    Touch_DrawLine();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
+
 
 /**
   * @brief System Clock Configuration

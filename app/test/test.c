@@ -1,52 +1,5 @@
 #include "test.h"
 
-extern CST816_Info CST816_Instance;
-void cst816_test()
-{
-    Screen_Fill_Color(WHITE);
-    // 绘制测试界面
-    Screen_Fill_Rectangle(0, 0, Screen_WIDTH, 20, BLUE);
-    uint8_t finger_num = 0;
-    while (1) {
-        // 获取触摸状态
-        finger_num = CST816_Get_FingerNum();
-        if (finger_num > 0 && finger_num != 0xFF) {
-            // 读取坐标
-            CST816_Get_XY_AXIS();
-            
-            uint16_t x = CST816_Instance.X_Pos;
-            uint16_t y = CST816_Instance.Y_Pos;
-            
-            // 验证坐标范围
-            if (x < Screen_WIDTH && y < Screen_HEIGHT) {
-                
-                // 绘制触摸点
-                Screen_DrawPixel(x, y, RED);
-                
-                // 绘制一个较大的圆点
-                for (int i = -2; i <= 2; i++) {
-                    for (int j = -2; j <= 2; j++) {
-                        if (x + i >= 0 && x + i < Screen_WIDTH &&
-                            y + j >= 0 && y + j < Screen_HEIGHT) {
-                            Screen_DrawPixel(x + i, y + j, RED);
-                        }
-                    }
-                }
-                
-                // 在底部显示坐标
-                char buf[32];
-                sprintf(buf, "X:%3d Y:%3d F:%d", x, y, finger_num);
-                // 清空坐标显示区域
-                Screen_Fill_Rectangle(0, Screen_HEIGHT - 20, Screen_WIDTH, 20, BLACK);
-            }
-        } else {
-            // 没有触摸时，延时一下避免CPU占用过高
-            HAL_Delay(10);
-        }
-    }
-}
-
-
 /* 触摸屏使用示例
   uint8_t check;
   uint8_t check_data[4];

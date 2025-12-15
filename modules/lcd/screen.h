@@ -3,6 +3,7 @@
 
 #include "spi.h"
 #include "fonts.h"
+#include "stdlib.h"
 
 #define Screen_SPI_PORT hspi1
 extern SPI_HandleTypeDef Screen_SPI_PORT;
@@ -116,12 +117,12 @@ void Screen_DrawPixel(uint16_t x, uint16_t y, uint16_t color);
 void Screen_Fill(uint16_t xSta, uint16_t ySta, uint16_t xEnd, uint16_t yEnd, uint16_t color);
 void Screen_DrawPixel_4px(uint16_t x, uint16_t y, uint16_t color);
 
-
 /* Simple test function. */
 void Screen_Test(void);
+void Screen_DrawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color);
+void Screen_DrawThickLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color, uint8_t thickness);
+void Screen_Clear(uint16_t color);
 
-
-//�Լ�����
 void Screen_Fill_Rectangle(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color);
 void Screen_DrawImage(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint16_t *data);
 #endif

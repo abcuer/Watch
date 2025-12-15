@@ -177,8 +177,8 @@ void Screen_Fill_Rectangle(uint16_t x, uint16_t y, uint16_t width, uint16_t heig
 
     uint32_t i;
     for (i = 0; i < (width * height); i++) {
-        Screen_WriteSmallData(color >> 8);    // д����ֽ�
-        Screen_WriteSmallData(color & 0xFF);  // д����ֽ�
+        Screen_WriteSmallData(color >> 8);    
+        Screen_WriteSmallData(color & 0xFF);  
     }
 }
 
@@ -211,7 +211,6 @@ void Screen_Fill(uint16_t xSta, uint16_t ySta, uint16_t xEnd, uint16_t yEnd, uin
 	Screen_UnSelect();
 }
 
-
 void Screen_DrawPixel_4px(uint16_t x, uint16_t y, uint16_t color)
 {
 	if ((x <= 0) || (x > Screen_WIDTH) ||
@@ -220,7 +219,6 @@ void Screen_DrawPixel_4px(uint16_t x, uint16_t y, uint16_t color)
 	Screen_Fill(x - 1, y - 1, x + 1, y + 1, color);
 	Screen_UnSelect();
 }
-
 
 void Screen_DrawImage(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint16_t *data)
 {
@@ -235,6 +233,80 @@ void Screen_DrawImage(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint
 	Screen_SetAddressWindow(x, y, x + w - 1, y + h - 1);
 	Screen_WriteData((uint8_t *)data, sizeof(uint16_t) * w * h);
 	Screen_UnSelect();
+}
+
+void Screen_DrawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color)
+{
+    int16_t dx = abs(x1 - x0);
+    int16_t dy = abs(y1 - y0);
+    int16_t sx = (x0 < x1) ? 1 : -1;
+    int16_t sy = (y0 < y1) ? 1 : -1;
+    int16_t err = dx - dy;
+    int16_t e2;
+    
+    while (1) {
+        Screen_DrawPixel(x0, y0, color);
+        
+        if (x0 == x1 && y0 == y1) break;
+        
+        e2 = 2 * err;
+        if (e2 > -dy) {
+            err -= dy;
+            x0 += sx;
+        }
+        if (e2 < dx) {
+            err += dx;
+            y0 += sy;
+        }
+    }
+}
+
+void Screen_Clear(uint16_t color)
+{
+    Screen_Fill_Color(color);
+}
+
+void Screen_DrawThickLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color, uint8_t thickness)
+{
+    if (thickness <= 1) {
+        // 厚度为1时，使用原版画线算法
+        Screen_DrawLine(x0, y0, x1, y1, color);
+        return;
+    }
+    
+    int16_t dx = abs(x1 - x0);
+    int16_t dy = abs(y1 - y0);
+    int16_t sx = (x0 < x1) ? 1 : -1;
+    int16_t sy = (y0 < y1) ? 1 : -1;
+    int16_t err = dx - dy;
+    int16_t e2;
+    
+    uint8_t half_thick = thickness / 2;
+    
+    while (1) {
+        // 绘制一个矩形点，而不是单个像素
+        for (int8_t i = -half_thick; i <= half_thick; i++) {
+            for (int8_t j = -half_thick; j <= half_thick; j++) {
+                uint16_t px = x0 + i;
+                uint16_t py = y0 + j;
+                if (px < Screen_WIDTH && py < Screen_HEIGHT) {
+                    Screen_DrawPixel(px, py, color);
+                }
+            }
+        }
+        
+        if (x0 == x1 && y0 == y1) break;
+        
+        e2 = 2 * err;
+        if (e2 > -dy) {
+            err -= dy;
+            x0 += sx;
+        }
+        if (e2 < dx) {
+            err += dx;
+            y0 += sy;
+        }
+    }
 }
 
 void Screen_Test(void)
@@ -254,3 +326,4 @@ void Screen_Test(void)
 	Screen_Fill_Color(YELLOW);
   HAL_Delay(100);
 }
+

@@ -9,8 +9,4 @@
 
 
 
-void cst816_test();
-
-
-
 #endif
