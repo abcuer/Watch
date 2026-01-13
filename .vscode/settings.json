@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "stm32f1xx_hal.h": "c",
+        "stm32f1xx_hal_gpio.h": "c",
+        "stdarg.h": "c",
+        "stdio.h": "c",
+        "string.h": "c",
+        "stdlib.h": "c",
+        "compare": "c",
+        "headfile.h": "c",
+        "usart.h": "c",
+        "gpio.h": "c",
+        "spi.h": "c",
+        "delay.h": "c",
+        "myiic.h": "c",
+        "screen.h": "c",
+        "sht31.h": "c",
+    }
+}

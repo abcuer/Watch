@@ -1,0 +1,23 @@
+CMakeFiles/Watch_f411.dir/app/lvgl/src/misc/lv_printf.c.obj: \
+ D:\MCU\1_STM32\Watch_f411\app\lvgl\src\misc\lv_printf.c \
+ D:\MCU\1_STM32\Watch_f411\app\lvgl\src\misc\lv_printf.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/inttypes.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/newlib.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/_newlib_version.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/sys/config.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/machine/ieeefp.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/sys/features.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/sys/_intsup.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/_ansi.h \
+ D:/Application/Work/MSYS2/ucrt64/lib/gcc/arm-none-eabi/13.3.0/include/stdint.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/stdint.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/machine/_default_types.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/sys/_stdint.h \
+ D:/Application/Work/MSYS2/ucrt64/lib/gcc/arm-none-eabi/13.3.0/include/stddef.h \
+ D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include/sys/_locale.h \
+ D:/MCU/1_STM32/Watch_f411/app/lvgl/src/lv_conf_internal.h \
+ D:/MCU/1_STM32/Watch_f411/app/lvgl/src/lv_conf_kconfig.h \
+ D:\MCU\1_STM32\Watch_f411\app\lvgl/lv_conf.h \
+ D:/Application/Work/MSYS2/ucrt64/lib/gcc/arm-none-eabi/13.3.0/include/stdarg.h \
+ D:\MCU\1_STM32\Watch_f411\app\lvgl\src\misc\lv_types.h \
+ D:/Application/Work/MSYS2/ucrt64/lib/gcc/arm-none-eabi/13.3.0/include/stdbool.h

@@ -1,0 +1,86 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {}
+        },
+        {
+            "name": "Debug",
+            "inherits": "default",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "Release",
+            "inherits": "default",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "使用工具链文件配置预设",
+            "displayName": "使用工具链文件配置预设",
+            "description": "设置 Ninja 生成器、版本和安装目录",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+        },
+        {
+            "name": "自定义配置预设",
+            "displayName": "自定义配置预设",
+            "description": "设置 Ninja 生成器、版本和安装目录",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+        },
+        {
+            "name": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+            "displayName": "GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+            "description": "正在使用编译器: C = D:\\Application\\Work\\MSYS2\\ucrt64\\bin\\gcc.exe, CXX = D:\\Application\\Work\\MSYS2\\ucrt64\\bin\\g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install",
+                "CMAKE_C_COMPILER": "D:/Application/Work/MSYS2/ucrt64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "D:/Application/Work/MSYS2/ucrt64/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "GCC 13.3.0 arm-none-eabi (ucrt64)",
+            "displayName": "GCC 13.3.0 arm-none-eabi (ucrt64)",
+            "description": "正在使用编译器: C = D:\\Application\\Work\\MSYS2\\ucrt64\\bin\\arm-none-eabi-gcc.exe, CXX = D:\\Application\\Work\\MSYS2\\ucrt64\\bin\\arm-none-eabi-g++.exe",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install",
+                "CMAKE_C_COMPILER": "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc.exe",
+                "CMAKE_CXX_COMPILER": "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "configurePreset": "Debug"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "Release"
+        }
+    ]
+}

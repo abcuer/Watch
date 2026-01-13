@@ -1,0 +1,5093 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Watch_f411.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_options",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_include_directories",
+			"USER_ADD_DIR",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"cmake/stm32cubemx/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 9
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 15
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 19
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 76,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 21
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 23
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 25
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 27
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 29
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 31
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 84,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 33
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 35
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 86,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 37
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 39
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 41
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 43
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 45
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 91,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 47
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 49
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 93,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 51
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 94,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 53
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 95,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 55
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 57
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 59
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 98,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 61
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 63
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 65
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 67
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 102,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 69
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 71
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 73
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 75
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 106,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 77
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 79
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 108,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 81
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 109,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 83
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 85
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 111,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 87
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 112,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 89
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 113,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 91
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 93
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 95
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 97
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 118,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 99
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 119,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 101
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 121,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 103
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 105
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 124,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 107
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 125,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 109
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 111
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 128,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 113
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 115
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 117
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 119
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 121
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 134,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 123
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 135,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 125
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 136,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 127
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 137,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 129
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 138,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 131
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 133
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 82,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 9
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 19
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 23
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 25
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 29
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 31
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 35
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 37
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 39
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 41
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 43
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 45
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 47
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 49
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 51
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 53
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 55
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 57
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 59
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 61
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 63
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 65
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 67
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 69
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 71
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 73
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 75
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 77
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 79
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 81
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 83
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 85
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 87
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 89
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 91
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 93
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 95
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 97
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 99
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 101
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 103
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 105
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 107
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 109
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 111
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 113
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 115
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 117
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 119
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 121
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 123
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 125
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 127
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 129
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 131
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 133
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-w"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "STM32F411xE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/test"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/draw"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/custom"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated/guider_customer_fonts"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated/guider_fonts"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated/images"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/porting"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/core"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/arm2d"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/nxp"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/nxp/pxp"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/nxp/vglite"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/renesas"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/sdl"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/stm32_dma2d"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/sw"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/swm341_dma2d"
+				},
+				{
+					"backtrace" : 50,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra"
+				},
+				{
+					"backtrace" : 52,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/layouts"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/layouts/flex"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/layouts/grid"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/barcode"
+				},
+				{
+					"backtrace" : 62,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/bmp"
+				},
+				{
+					"backtrace" : 64,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/ffmpeg"
+				},
+				{
+					"backtrace" : 66,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/freetype"
+				},
+				{
+					"backtrace" : 68,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/fsdrv"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/gif"
+				},
+				{
+					"backtrace" : 72,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/png"
+				},
+				{
+					"backtrace" : 74,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/qrcode"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/rlottie"
+				},
+				{
+					"backtrace" : 78,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/sjpg"
+				},
+				{
+					"backtrace" : 80,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others"
+				},
+				{
+					"backtrace" : 82,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/fragment"
+				},
+				{
+					"backtrace" : 84,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/gridnav"
+				},
+				{
+					"backtrace" : 86,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/ime"
+				},
+				{
+					"backtrace" : 88,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/imgfont"
+				},
+				{
+					"backtrace" : 90,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/monkey"
+				},
+				{
+					"backtrace" : 92,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/msg"
+				},
+				{
+					"backtrace" : 94,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/snapshot"
+				},
+				{
+					"backtrace" : 96,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes"
+				},
+				{
+					"backtrace" : 98,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes/basic"
+				},
+				{
+					"backtrace" : 100,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes/default"
+				},
+				{
+					"backtrace" : 102,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes/mono"
+				},
+				{
+					"backtrace" : 104,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/widgets"
+				},
+				{
+					"backtrace" : 106,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/font"
+				},
+				{
+					"backtrace" : 108,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/hal"
+				},
+				{
+					"backtrace" : 110,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/misc"
+				},
+				{
+					"backtrace" : 112,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/widgets"
+				},
+				{
+					"backtrace" : 114,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp"
+				},
+				{
+					"backtrace" : 116,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp/iic"
+				},
+				{
+					"backtrace" : 118,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp/delay"
+				},
+				{
+					"backtrace" : 120,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp/timer"
+				},
+				{
+					"backtrace" : 122,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/lcd"
+				},
+				{
+					"backtrace" : 124,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/touch"
+				},
+				{
+					"backtrace" : 126,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/sht31"
+				},
+				{
+					"backtrace" : 128,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/bmp280"
+				},
+				{
+					"backtrace" : 130,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/max30102"
+				},
+				{
+					"backtrace" : 132,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/bh1750"
+				},
+				{
+					"backtrace" : 134,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/mpu6050"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Core/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				11,
+				13,
+				17,
+				20,
+				22,
+				24,
+				25,
+				28,
+				29,
+				30,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				118,
+				120,
+				122,
+				123,
+				124,
+				126,
+				128,
+				129,
+				131,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				149,
+				151,
+				153,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				164,
+				167,
+				169,
+				172,
+				174,
+				176,
+				178,
+				180,
+				182,
+				183,
+				184,
+				185,
+				186,
+				188,
+				190,
+				192,
+				194,
+				196,
+				198,
+				200,
+				202,
+				204,
+				208,
+				210,
+				211,
+				213,
+				215,
+				217,
+				219,
+				221,
+				224,
+				226,
+				228,
+				231,
+				233,
+				235,
+				237,
+				239,
+				241,
+				243,
+				245,
+				247,
+				249,
+				251,
+				253,
+				255,
+				257,
+				259,
+				261,
+				263,
+				265,
+				267,
+				269,
+				271,
+				273,
+				275,
+				277,
+				280,
+				282,
+				284,
+				286,
+				287,
+				289,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				319,
+				321,
+				323,
+				325,
+				327,
+				329,
+				332,
+				334,
+				336,
+				338,
+				340,
+				342,
+				344,
+				346,
+				348,
+				350,
+				352,
+				354,
+				356,
+				358,
+				360,
+				362,
+				364,
+				366,
+				369,
+				371,
+				373,
+				375,
+				377,
+				379,
+				381,
+				383,
+				385,
+				387,
+				389,
+				391,
+				393,
+				395,
+				397,
+				399,
+				401,
+				404,
+				406,
+				408,
+				410,
+				412,
+				414,
+				416,
+				418,
+				420,
+				422,
+				424,
+				426
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -g"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-w"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "STM32F411xE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/test"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/draw"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/custom"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated/guider_customer_fonts"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated/guider_fonts"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/generated/images"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/porting"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/core"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/arm2d"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/nxp"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/nxp/pxp"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/nxp/vglite"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/renesas"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/sdl"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/stm32_dma2d"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/sw"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/draw/swm341_dma2d"
+				},
+				{
+					"backtrace" : 50,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra"
+				},
+				{
+					"backtrace" : 52,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/layouts"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/layouts/flex"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/layouts/grid"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/barcode"
+				},
+				{
+					"backtrace" : 62,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/bmp"
+				},
+				{
+					"backtrace" : 64,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/ffmpeg"
+				},
+				{
+					"backtrace" : 66,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/freetype"
+				},
+				{
+					"backtrace" : 68,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/fsdrv"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/gif"
+				},
+				{
+					"backtrace" : 72,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/png"
+				},
+				{
+					"backtrace" : 74,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/qrcode"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/rlottie"
+				},
+				{
+					"backtrace" : 78,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/libs/sjpg"
+				},
+				{
+					"backtrace" : 80,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others"
+				},
+				{
+					"backtrace" : 82,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/fragment"
+				},
+				{
+					"backtrace" : 84,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/gridnav"
+				},
+				{
+					"backtrace" : 86,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/ime"
+				},
+				{
+					"backtrace" : 88,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/imgfont"
+				},
+				{
+					"backtrace" : 90,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/monkey"
+				},
+				{
+					"backtrace" : 92,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/msg"
+				},
+				{
+					"backtrace" : 94,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/others/snapshot"
+				},
+				{
+					"backtrace" : 96,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes"
+				},
+				{
+					"backtrace" : 98,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes/basic"
+				},
+				{
+					"backtrace" : 100,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes/default"
+				},
+				{
+					"backtrace" : 102,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/themes/mono"
+				},
+				{
+					"backtrace" : 104,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/extra/widgets"
+				},
+				{
+					"backtrace" : 106,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/font"
+				},
+				{
+					"backtrace" : 108,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/hal"
+				},
+				{
+					"backtrace" : 110,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/misc"
+				},
+				{
+					"backtrace" : 112,
+					"path" : "D:/MCU/1_STM32/Watch_f411/app/lvgl/src/widgets"
+				},
+				{
+					"backtrace" : 114,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp"
+				},
+				{
+					"backtrace" : 116,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp/iic"
+				},
+				{
+					"backtrace" : 118,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp/delay"
+				},
+				{
+					"backtrace" : 120,
+					"path" : "D:/MCU/1_STM32/Watch_f411/bsp/timer"
+				},
+				{
+					"backtrace" : 122,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/lcd"
+				},
+				{
+					"backtrace" : 124,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/touch"
+				},
+				{
+					"backtrace" : 126,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/sht31"
+				},
+				{
+					"backtrace" : 128,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/bmp280"
+				},
+				{
+					"backtrace" : 130,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/max30102"
+				},
+				{
+					"backtrace" : 132,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/bh1750"
+				},
+				{
+					"backtrace" : 134,
+					"path" : "D:/MCU/1_STM32/Watch_f411/modules/mpu6050"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Core/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/MCU/1_STM32/Watch_f411/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				9
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "STM32_Drivers::@768a070a0fe75716b479"
+		}
+	],
+	"id" : "Watch_f411::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"D:/MCU/1_STM32/Watch_f411/STM32F411XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=Watch_f411.map -Wl,--gc-sections -Wl,--print-memory-usage",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lc_nano",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-u",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "_printf_float",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "Watch_f411",
+	"nameOnDisk" : "Watch_f411.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				11,
+				13,
+				17,
+				20,
+				22,
+				24,
+				25,
+				28,
+				29,
+				30,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				118,
+				120,
+				122,
+				123,
+				124,
+				126,
+				128,
+				129,
+				131,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				149,
+				151,
+				153,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				164,
+				167,
+				169,
+				172,
+				174,
+				176,
+				178,
+				180,
+				182,
+				183,
+				184,
+				185,
+				186,
+				188,
+				190,
+				192,
+				194,
+				196,
+				198,
+				200,
+				202,
+				204,
+				208,
+				210,
+				211,
+				213,
+				215,
+				217,
+				219,
+				221,
+				224,
+				226,
+				228,
+				231,
+				233,
+				235,
+				237,
+				239,
+				241,
+				243,
+				245,
+				247,
+				249,
+				251,
+				253,
+				255,
+				257,
+				259,
+				261,
+				263,
+				265,
+				267,
+				269,
+				271,
+				273,
+				275,
+				277,
+				280,
+				282,
+				284,
+				286,
+				287,
+				289,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				319,
+				321,
+				323,
+				325,
+				327,
+				329,
+				332,
+				334,
+				336,
+				338,
+				340,
+				342,
+				344,
+				346,
+				348,
+				350,
+				352,
+				354,
+				356,
+				358,
+				360,
+				362,
+				364,
+				366,
+				369,
+				371,
+				373,
+				375,
+				377,
+				379,
+				381,
+				383,
+				385,
+				387,
+				389,
+				391,
+				393,
+				395,
+				397,
+				399,
+				401,
+				404,
+				406,
+				408,
+				410,
+				412,
+				414,
+				416,
+				418,
+				420,
+				422,
+				424,
+				426
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				9
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				10,
+				12,
+				14,
+				15,
+				16,
+				18,
+				19,
+				21,
+				23,
+				26,
+				27,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				119,
+				121,
+				125,
+				127,
+				130,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				150,
+				152,
+				154,
+				163,
+				165,
+				166,
+				168,
+				170,
+				171,
+				173,
+				175,
+				177,
+				179,
+				181,
+				187,
+				189,
+				191,
+				193,
+				195,
+				197,
+				199,
+				201,
+				203,
+				205,
+				206,
+				207,
+				209,
+				212,
+				214,
+				216,
+				218,
+				220,
+				222,
+				223,
+				225,
+				227,
+				229,
+				230,
+				232,
+				234,
+				236,
+				238,
+				240,
+				242,
+				244,
+				246,
+				248,
+				250,
+				252,
+				254,
+				256,
+				258,
+				260,
+				262,
+				264,
+				266,
+				268,
+				270,
+				272,
+				274,
+				276,
+				278,
+				279,
+				281,
+				283,
+				285,
+				288,
+				290,
+				317,
+				318,
+				320,
+				322,
+				324,
+				326,
+				328,
+				330,
+				331,
+				333,
+				335,
+				337,
+				339,
+				341,
+				343,
+				345,
+				347,
+				349,
+				351,
+				353,
+				355,
+				357,
+				359,
+				361,
+				363,
+				365,
+				367,
+				368,
+				370,
+				372,
+				374,
+				376,
+				378,
+				380,
+				382,
+				384,
+				386,
+				388,
+				390,
+				392,
+				394,
+				396,
+				398,
+				400,
+				402,
+				403,
+				405,
+				407,
+				409,
+				411,
+				413,
+				415,
+				417,
+				419,
+				421,
+				423,
+				425,
+				427
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/tim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/stm32f4xx_it.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/stm32f4xx_hal_msp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/sysmem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/syscalls.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 1,
+			"path" : "startup_stm32f411xe.s",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 136,
+			"path" : "app/headfile.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 137,
+			"compileGroupIndex" : 0,
+			"path" : "app/test/test.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 137,
+			"path" : "app/test/test.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 138,
+			"compileGroupIndex" : 0,
+			"path" : "app/draw/draw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 138,
+			"path" : "app/draw/draw.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 139,
+			"path" : "app/lvgl/lv_conf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 139,
+			"path" : "app/lvgl/lvgl.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 140,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/custom/custom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 140,
+			"path" : "app/lvgl/custom/custom.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 140,
+			"path" : "app/lvgl/custom/lv_conf_ext.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 141,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/generated/events_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 141,
+			"path" : "app/lvgl/generated/events_init.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 141,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/generated/gui_guider.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 141,
+			"path" : "app/lvgl/generated/gui_guider.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 141,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/generated/setup_scr_screen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 141,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/generated/widgets_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 141,
+			"path" : "app/lvgl/generated/widgets_init.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 142,
+			"path" : "app/lvgl/generated/guider_customer_fonts/guider_customer_fonts.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 143,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/generated/images/_1_alpha_100x140.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 143,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/generated/images/_1_alpha_180x226.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 143,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/generated/images/_1_alpha_240x280.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 144,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/porting/lv_port_disp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 144,
+			"path" : "app/lvgl/porting/lv_port_disp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 144,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/porting/lv_port_fs_template.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 144,
+			"path" : "app/lvgl/porting/lv_port_fs_template.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 144,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/porting/lv_port_indev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 144,
+			"path" : "app/lvgl/porting/lv_port_indev.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_disp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_disp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_event.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_event.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_group.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_group.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_indev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_indev.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_indev_scroll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_indev_scroll.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj_class.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj_class.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj_draw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj_draw.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj_pos.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj_pos.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj_scroll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj_scroll.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj_style.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj_style.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj_style_gen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj_style_gen.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_obj_tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_obj_tree.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_refr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_refr.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/core/lv_theme.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "app/lvgl/src/core/lv_theme.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_arc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_img.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_label.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_layer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_line.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_mask.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_mask.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_rect.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_transform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_transform.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_draw_triangle.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_draw_triangle.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_img_buf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_img_buf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_img_cache.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_img_cache.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/lv_img_decoder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "app/lvgl/src/draw/lv_img_decoder.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 147,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/arm2d/lv_gpu_arm2d.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 147,
+			"path" : "app/lvgl/src/draw/arm2d/lv_gpu_arm2d.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 148,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_draw_pxp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 148,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_draw_pxp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 148,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 148,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 148,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 148,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 148,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 148,
+			"path" : "app/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_vglite_buf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_vglite_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "app/lvgl/src/draw/nxp/vglite/lv_vglite_utils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 150,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/renesas/lv_gpu_d2_draw_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 150,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 150,
+			"path" : "app/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_bg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_composite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_composite.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_img.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_layer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_mask.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_mask.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_polygon.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_priv.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_rect.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "app/lvgl/src/draw/sdl/lv_draw_sdl_utils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 152,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 152,
+			"path" : "app/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_blend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_blend.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_dither.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_dither.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_gradient.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_gradient.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_letter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_polygon.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/sw/lv_draw_sw_transform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 154,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 154,
+			"path" : "app/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 155,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/lv_extra.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 155,
+			"path" : "app/lvgl/src/extra/lv_extra.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 156,
+			"path" : "app/lvgl/src/extra/layouts/lv_layouts.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 157,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/layouts/flex/lv_flex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 157,
+			"path" : "app/lvgl/src/extra/layouts/flex/lv_flex.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 158,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/layouts/grid/lv_grid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 158,
+			"path" : "app/lvgl/src/extra/layouts/grid/lv_grid.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 159,
+			"path" : "app/lvgl/src/extra/libs/lv_libs.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 160,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/barcode/code128.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 160,
+			"path" : "app/lvgl/src/extra/libs/barcode/code128.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 160,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/barcode/lv_barcode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 160,
+			"path" : "app/lvgl/src/extra/libs/barcode/lv_barcode.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 161,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/bmp/lv_bmp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 161,
+			"path" : "app/lvgl/src/extra/libs/bmp/lv_bmp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 162,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 162,
+			"path" : "app/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 163,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/freetype/lv_freetype.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 163,
+			"path" : "app/lvgl/src/extra/libs/freetype/lv_freetype.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 164,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 164,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/fsdrv/lv_fs_posix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 164,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/fsdrv/lv_fs_rawfs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 164,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 164,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/fsdrv/lv_fs_win32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 164,
+			"path" : "app/lvgl/src/extra/libs/fsdrv/lv_fsdrv.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 165,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/gif/gifdec.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 165,
+			"path" : "app/lvgl/src/extra/libs/gif/gifdec.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 165,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/gif/lv_gif.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 165,
+			"path" : "app/lvgl/src/extra/libs/gif/lv_gif.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 166,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/png/lodepng.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 166,
+			"path" : "app/lvgl/src/extra/libs/png/lodepng.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 166,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/png/lv_png.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 166,
+			"path" : "app/lvgl/src/extra/libs/png/lv_png.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 167,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/qrcode/lv_qrcode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 167,
+			"path" : "app/lvgl/src/extra/libs/qrcode/lv_qrcode.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 167,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/qrcode/qrcodegen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 167,
+			"path" : "app/lvgl/src/extra/libs/qrcode/qrcodegen.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 168,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/rlottie/lv_rlottie.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 168,
+			"path" : "app/lvgl/src/extra/libs/rlottie/lv_rlottie.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 169,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/sjpg/lv_sjpg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 169,
+			"path" : "app/lvgl/src/extra/libs/sjpg/lv_sjpg.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 169,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/libs/sjpg/tjpgd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 169,
+			"path" : "app/lvgl/src/extra/libs/sjpg/tjpgd.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 169,
+			"path" : "app/lvgl/src/extra/libs/sjpg/tjpgdcnf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 170,
+			"path" : "app/lvgl/src/extra/others/lv_others.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 171,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/fragment/lv_fragment.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 171,
+			"path" : "app/lvgl/src/extra/others/fragment/lv_fragment.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 171,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/fragment/lv_fragment_manager.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 172,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/gridnav/lv_gridnav.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 172,
+			"path" : "app/lvgl/src/extra/others/gridnav/lv_gridnav.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 173,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/ime/lv_ime_pinyin.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 173,
+			"path" : "app/lvgl/src/extra/others/ime/lv_ime_pinyin.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 174,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/imgfont/lv_imgfont.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 174,
+			"path" : "app/lvgl/src/extra/others/imgfont/lv_imgfont.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 175,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/monkey/lv_monkey.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 175,
+			"path" : "app/lvgl/src/extra/others/monkey/lv_monkey.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 176,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/msg/lv_msg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 176,
+			"path" : "app/lvgl/src/extra/others/msg/lv_msg.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 177,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/others/snapshot/lv_snapshot.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 177,
+			"path" : "app/lvgl/src/extra/others/snapshot/lv_snapshot.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 178,
+			"path" : "app/lvgl/src/extra/themes/lv_themes.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 179,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/themes/basic/lv_theme_basic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 179,
+			"path" : "app/lvgl/src/extra/themes/basic/lv_theme_basic.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 180,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/themes/default/lv_theme_default.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 180,
+			"path" : "app/lvgl/src/extra/themes/default/lv_theme_default.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 181,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/themes/mono/lv_theme_mono.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 181,
+			"path" : "app/lvgl/src/extra/themes/mono/lv_theme_mono.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/chinese_library.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_analogclock.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_analogclock.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_animimg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_animimg.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_calendar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_calendar.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_calendar_header_arrow.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_calendar_header_arrow.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_calendar_header_dropdown.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_calendar_header_dropdown.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_carousel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_carousel.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_chart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_chart.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_colorwheel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_colorwheel.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_dclock.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_dclock.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_imgbtn.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_imgbtn.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_keyboard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_keyboard.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_led.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_led.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_list.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_menu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_menu.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_meter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_meter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_msgbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_msgbox.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_radiobtn.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_radiobtn.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_span.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_span.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_spinbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_spinbox.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_spinner.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_spinner.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_tabview.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_tabview.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_textprogress.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_textprogress.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_tileview.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_tileview.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_video.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_video.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_widgets.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_win.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_win.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/extra/widgets/lv_zh_keyboard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "app/lvgl/src/extra/widgets/lv_zh_keyboard.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"path" : "app/lvgl/src/font/lv_font.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_dejavu_16_persian_hebrew.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_fmt_txt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"path" : "app/lvgl/src/font/lv_font_fmt_txt.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_loader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"path" : "app/lvgl/src/font/lv_font_loader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_10.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_12.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_12_subpx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_14.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_18.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_22.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_24.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_26.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_28.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_28_compressed.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_30.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_34.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_36.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_38.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_40.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_42.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_44.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_46.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_48.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_montserrat_8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_simsun_16_cjk.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_unscii_16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/font/lv_font_unscii_8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"path" : "app/lvgl/src/font/lv_symbol_def.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 184,
+			"path" : "app/lvgl/src/hal/lv_hal.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 184,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/hal/lv_hal_disp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 184,
+			"path" : "app/lvgl/src/hal/lv_hal_disp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 184,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/hal/lv_hal_indev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 184,
+			"path" : "app/lvgl/src/hal/lv_hal_indev.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 184,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/hal/lv_hal_tick.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 184,
+			"path" : "app/lvgl/src/hal/lv_hal_tick.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_anim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_anim.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_anim_timeline.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_anim_timeline.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_area.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_area.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_assert.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_async.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_async.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_bidi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_bidi.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_color.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_color.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_fs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_fs.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_gc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_gc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_ll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_ll.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_log.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_log.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_lru.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_lru.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_math.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_math.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_mem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_mem.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_printf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_printf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_style.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_style.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_style_gen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_style_gen.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_templ.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_templ.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_timer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_tlsf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_tlsf.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_txt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_txt.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_txt_ap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_txt_ap.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_types.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/misc/lv_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "app/lvgl/src/misc/lv_utils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_arc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_bar.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_btn.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_btn.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_btnmatrix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_btnmatrix.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_canvas.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_canvas.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_checkbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_checkbox.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_dropdown.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_dropdown.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_img.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_label.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_line.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_objx_templ.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_objx_templ.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_roller.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_roller.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_slider.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_slider.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_switch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_switch.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_table.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_table.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"path" : "app/lvgl/src/widgets/lv_textarea.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "app/lvgl/src/widgets/lv_textarea.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 187,
+			"path" : "bsp/sys.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 188,
+			"compileGroupIndex" : 0,
+			"path" : "bsp/iic/bsp_iic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 188,
+			"path" : "bsp/iic/bsp_iic.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 189,
+			"compileGroupIndex" : 0,
+			"path" : "bsp/delay/bsp_delay.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 189,
+			"path" : "bsp/delay/bsp_delay.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 190,
+			"compileGroupIndex" : 0,
+			"path" : "bsp/timer/bsp_timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 190,
+			"path" : "bsp/timer/bsp_timer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 191,
+			"compileGroupIndex" : 0,
+			"path" : "modules/lcd/fonts.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 191,
+			"path" : "modules/lcd/fonts.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 191,
+			"compileGroupIndex" : 0,
+			"path" : "modules/lcd/screen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 191,
+			"path" : "modules/lcd/screen.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 192,
+			"compileGroupIndex" : 0,
+			"path" : "modules/touch/cst816.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 192,
+			"path" : "modules/touch/cst816.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 193,
+			"compileGroupIndex" : 0,
+			"path" : "modules/sht31/sht31.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 193,
+			"path" : "modules/sht31/sht31.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 194,
+			"compileGroupIndex" : 0,
+			"path" : "modules/bmp280/bmp280.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 194,
+			"path" : "modules/bmp280/bmp280.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 195,
+			"compileGroupIndex" : 0,
+			"path" : "modules/max30102/blood.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 195,
+			"path" : "modules/max30102/blood.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 195,
+			"compileGroupIndex" : 0,
+			"path" : "modules/max30102/max30102.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 195,
+			"path" : "modules/max30102/max30102.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 196,
+			"compileGroupIndex" : 0,
+			"path" : "modules/bh1750/bh1750.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 196,
+			"path" : "modules/bh1750/bh1750.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 197,
+			"compileGroupIndex" : 0,
+			"path" : "modules/mpu6050/mpu6050.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 197,
+			"path" : "modules/mpu6050/mpu6050.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "EXECUTABLE"
+}

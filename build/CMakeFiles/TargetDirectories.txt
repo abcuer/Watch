@@ -1,0 +1,6 @@
+D:/MCU/1_STM32/Watch_f411/build/CMakeFiles/Watch_f411.dir
+D:/MCU/1_STM32/Watch_f411/build/CMakeFiles/edit_cache.dir
+D:/MCU/1_STM32/Watch_f411/build/CMakeFiles/rebuild_cache.dir
+D:/MCU/1_STM32/Watch_f411/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+D:/MCU/1_STM32/Watch_f411/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+D:/MCU/1_STM32/Watch_f411/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
